@@ -3,6 +3,7 @@
 	"displayName": "Linkify",
 	"description": "Format links copied from Tabs Outliner for Markdown",
 	"publisher": "drkvogel",
+	"repository": "https://github.com/drkvogel/linkify",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.32.0"
