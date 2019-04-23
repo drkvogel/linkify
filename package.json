@@ -15,10 +15,12 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [{
-            "command": "extension.linkify",
-			"title": "Linkify"
-		}]
+		"commands": [
+			{
+				"command": "extension.linkify",
+				"title": "Linkify"
+			}
+		]
 	},
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install",
