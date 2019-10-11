@@ -70,7 +70,7 @@ function activate(context) {
 				newlines.push(nl);
 				console.log('newline: ' + nl);
 			} else {
-				if (line != 'Window') {
+				if (line != 'Window') { // TODO doesn't work on Windows?
 					newlines.push(line);
 				}
 			}

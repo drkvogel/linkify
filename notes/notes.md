@@ -3,18 +3,16 @@
 [VS Code API  Visual Studio Code Extension API ](https://code.visualstudio.com/api/references/vscode-api)
 [VS Code API  Visual Studio Code Extension API ](https://code.visualstudio.com/api/references/vscode-api#TextEditor)
 
+No longer gets rid of `^Window`?
+
 ## do
 
-take out e.g. `(21) ` from YouTube
-take out e.g. `&rlz=1C5CHFA_enGB838GB838&oq=...&aqs=chrome..69i57.14693j0j7&sourceid=chrome&ie=UTF-8` from Google search query string
 query string parser/filter?
 remove ` - Jira `
 remove space before `(http`
-
 if it has `https://www.google.com/search?`:
   remove everything until `oq=`
   remove everything the rest
-
 update README
 write tests
 convert to TypeScript
@@ -38,6 +36,11 @@ asdfafd
 
 auto-linkify on paste into vscode?
 
+2019-10-11 19:28:18
+[Configuring automated security fixes - GitHub Help ](https://help.github.com/en/articles/configuring-automated-security-fixes)
+[npm semantic version calculator ](https://semver.npmjs.com/)
+[Semantic Versioning 2.0.0  Semantic Versioning ](https://semver.org/)
+
 ## done
 
 foreach line that has `(http` in it:
@@ -47,14 +50,6 @@ foreach line that has `(http` in it:
 
 2019-04-21 23:35:32
 bound `linkify` command to `shift+cmd+i`
-
-2019-10-11 19:28:18
-[Bump lodash from 4.17.11 to 4.17.15 by dependabot · Pull Request #1 · drkvogel/linkify ](https://github.com/drkvogel/linkify/pull/1)
-[Configuring automated security fixes - GitHub Help ](https://help.github.com/en/articles/configuring-automated-security-fixes)
-[npm semantic version calculator ](https://semver.npmjs.com/)
-[Semantic Versioning 2.0.0  Semantic Versioning ](https://semver.org/)
-
-
 
 ### Install `vsce`
 ```
@@ -89,3 +84,11 @@ Unpacking: 100%
 Ignoring option install-extension: not supported for code
 ```
 Installed `.vsix` from Code menu instead.
+
+---
+
+take out e.g. `(21) ` from YouTube-
+take out e.g. `&rlz=1C5CHFA_enGB838GB838&oq=...&aqs=chrome..69i57.14693j0j7&sourceid=chrome&ie=UTF-8` from Google search query string-
+
+Dependabot security PRs, e.g.:
+[Bump lodash from 4.17.11 to 4.17.15 by dependabot · Pull Request #1 · drkvogel/linkify ](https://github.com/drkvogel/linkify/pull/1)
