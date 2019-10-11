@@ -43,10 +43,26 @@ function activate(context) {
 				nl = nl.replace(/ - Google Search /g, '');
 				nl = nl.replace(/ - YouTube /g, '');
 				nl = nl.replace(/ - chrisjbird@gmail.com - Gmail /g, '');
-				// TODO take out e.g. `(21) ` from YouTube
+				nl = nl.replace(/ - Stack Overflow /g, '');
+				nl = nl.replace(/\(\d+\) /g, ''); // take out e.g. `(21) ` from YouTube
+
+				// Google
+				// TODO should check this is a Google query at this point, in case it messes up other URLs
+				nl = nl.replace(/oq=.*?\&/g, '');
+				nl = nl.replace(/rlz=.*?\&/g, '');
+				nl = nl.replace(/sxsrf=.*?\&/g, '');
+				nl = nl.replace(/ei=.*?\&/g, '');
+				nl = nl.replace(/ved=.*?\&/g, '');
+				nl = nl.replace(/gs_l=.*?\&/g, '');
+				nl = nl.replace(/uact=.*?\&/g, '');
+				nl = nl.replace(/aqs=.*?\&/g, '');
+				nl = nl.replace(/sourceid=.*?\&/g, '');
+				// TODO doesn't get last one as it doesn't end with `&`
+				// TODO more elegant would be remove all params that are not `q`...
 				// TODO   if it has `https://www.google.com/search?`:
 					// remove everything until `oq=`
 					// remove the rest
+
 				linkStart = nl.indexOf('(http'); // as chars might have been removed
 				nl = nl.substring(0, linkStart) + ']' + nl.substring(linkStart);
 				nl = '[' + nl.trim();
