@@ -77,3 +77,15 @@ DONE  Packaged: /Users/kvogel/Projects/linkify/linkify-0.0.1.vsix (8 files, 16.4
 (node:9529) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
 Extension 'linkify-0.0.1.vsix' was successfully installed!
 ```
+
+Doesn't work on Windows/WSL:
+
+```
+cbird@CHRISBIRD10:/mnt/c/Users/birdc/Projects/linkify$ code --install-extension linkify-0.0.1.vsix 
+Installing VS Code Server b37e54c98e1a74ba89e03073e5a3761284e3ffb0
+Downloading: 100%
+Unpacking: 100%
+Ignoring option install-extension: not supported for code
+```
+
+Installed `.vsix` from Code menu instead.
