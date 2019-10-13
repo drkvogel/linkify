@@ -4,7 +4,7 @@
 	"description": "Format links copied from Tabs Outliner for Markdown",
 	"publisher": "drkvogel",
 	"repository": "https://github.com/drkvogel/linkify",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.32.0"
 	},
