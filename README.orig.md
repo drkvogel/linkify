@@ -1,5 +1,5 @@
 
-javascript extension created with yo code
+javascript extension created with `yo code`
 
 # linkify README
 
