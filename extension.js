@@ -36,14 +36,18 @@ function activate(context) {
 		let lines = text.split('\n');
 		let newlines = [];
 		lines.forEach(function(line) {
+			// @ts-ignore
 			console.log('orig: ' + line);
 			let linkStart = line.indexOf('(http');
 			if (-1 != linkStart) {
 				let nl = line.replace(/[\[|\]]/g, ''); // remove square brackets
 				nl = nl.replace(/ - Google Search /g, '');
+				nl = nl.replace(/ - Stack Overflow /g, '');
 				nl = nl.replace(/ - YouTube /g, '');
-				nl = nl.replace(/ - chrisjbird@gmail.com - Gmail /g, '');
-				// TODO take out e.g. `(21) ` from YouTube
+				nl = nl.replace(/ - JIRA /g, '');
+				nl = nl.replace(/ - .*@gmail.com - Gmail /g, '');
+				nl = nl.replace(/\(\d+\) /g, ''); // TODO take out e.g. `(21) ` from YouTube
+				// nl = nl.replace(/\([0-9]+\)/g, '');		// `(21) ` from YouTube
 				// TODO   if it has `https://www.google.com/search?`:
 					// remove everything until `oq=`
 					// remove the rest
@@ -51,6 +55,7 @@ function activate(context) {
 				nl = nl.substring(0, linkStart) + ']' + nl.substring(linkStart);
 				nl = '[' + nl.trim();
 				newlines.push(nl);
+				// @ts-ignore
 				console.log('newline: ' + nl);
 			} else {
 				if (line != 'Window') {
