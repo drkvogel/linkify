@@ -1,3 +1,16 @@
+2019-10-18 11:55:43
+[Alerts · drkvogel/linkify ](https://github.com/drkvogel/linkify/network/alert/yarn.lock/diff/open)
+[yarn.lock integrity](https://www.google.com/search?q=yarn.lock+integrity&oq=yarn.lock+integrity&aqs=chrome..69i57.5087j0j7&sourceid=chrome&ie=UTF-8)
+[javascript - What is the integrity property inside yarn.lock file? - Stack Overflow ](https://stackoverflow.com/questions/53540429/what-is-the-integrity-property-inside-yarn-lock-file)
+[README.md\scriptableapplication\examples - pyside/pyside-setup.git - Git super project for PySide ](https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/scriptableapplication/README.md)
+[Security Alerts · drkvogel/linkify ](https://github.com/drkvogel/linkify/network/alerts)
+[vs code extension yarn npm](https://www.google.com/search?q=vs+code+extension+yarn+npm&oq=vs+code+extension+yarn+npm&aqs=chrome..69i57.9632j0j7&sourceid=chrome&ie=UTF-8)
+[Building a Visual Studio Code Extension - DEV Community 👩‍💻👨‍💻 ](https://dev.to/azure/building-a-visual-studio-code-extension-dkj)
+[yarn save-dev](https://www.google.com/search?q=yarn+save-dev&oq=yarn+save-dev&aqs=chrome..69i57.3091j0j7&sourceid=chrome&ie=UTF-8)
+[yarn remove old dependency](https://www.google.com/search?q=yarn+remove+old+dependency&oq=yarn+remove+old+dependency&aqs=chrome..69i57.6485j0j7&sourceid=chrome&ie=UTF-8)
+[Why Are You Still Using Yarn in 2018? ](https://iamturns.com/yarn-vs-npm-2018/)
+
+---
 
 `        Window`: `\d+Window$`
 `Window (crashed Wed Jun 19 2019)`: `^Window \(crashed.*\)`
