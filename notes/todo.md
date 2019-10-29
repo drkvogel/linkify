@@ -13,6 +13,11 @@ or, remove all after slash by default?
 
 `\?_encoding.*` ?
 
+ - Super User 
+ - MacRumors 
+ | MacRumors Forums 
+: Amazon.co.uk: Musical Instruments 
+
 Window
     free screen recorder windows - Google Search (https://www.google.com/search?q=free+screen+recorder+windows&oq=free+screen+recorder+windows&aqs=chrome..69i57j69i64l2.6175j0j1&sourceid=chrome&ie=UTF-8&foo=bar)
     free screen recorder windows - Google Search (https://www.google.com/search?q=free+screen+recorder+windows&oq=free+screen+recorder+windows&aqs=chrome..69i57j69i64l2.6175j0j1&sourceid=chrome&ie=UTF-8&stick=H4sIAAAAAAAAAOOQUeLSz9U3yLA0rzQ0NpLOL0jNUyjOLy1KTlUoTi5KBfKKUpPzi1JSi6Jk0oB8dFGF8sy8lPzy4lOMYHOMCrMtzM1PMXKDOIYGGXllZRVQqbKKtJzyXCjHtKqkMCsLyoFYDjPBrCCjuPgXo7Q_bqcsYuVwAwoUp6YWAQCte4VcwQAAAA&sa=X&ved=2ahUKEwi6hM6q6sHlAhUkRhUIHfYbD-UQxA0wFnoECAwQCg&foo=bar)
