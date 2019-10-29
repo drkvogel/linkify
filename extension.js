@@ -42,13 +42,20 @@ function activate(context) {
 			let linkStart = line.indexOf('(http');
 			if (-1 != linkStart) {
 				let nl = line.replace(/[\[|\]]/g, ''); // remove square brackets
+
+				// remove site title
 				nl = nl.replace(/ - Google Search /g, '');
 				nl = nl.replace(/ - Stack Overflow /g, '');
 				nl = nl.replace(/ - YouTube /g, '');
 				nl = nl.replace(/ - JIRA /g, '');
-				nl = nl.replace(/ - .*@gmail.com - Gmail /g, '');
-				// nl = nl.replace(/\([0-9]+\)/g, '');		// `(21) ` from YouTube
-				nl = nl.replace(/\(\d+\) /g, ''); // take out e.g. `(21) ` from YouTube
+				nl = nl.replace(/ - Quora/g, '');
+				nl = nl.replace(/GitHub - /g, '');
+				nl = nl.replace(/ - Ask Different/g, '');
+				nl = nl.replace(/ - Android Enthusiasts Stack Exchange/g, '');
+
+				// take out e.g. `(21) ` from YouTube etc
+				// nl = nl.replace(/\([0-9]+\)/g, '');
+				nl = nl.replace(/\(\d+\) /g, ''); 
 
 				// Google
 				// TODO should check this is a Google query at this point, in case it messes up other URLs
@@ -61,6 +68,16 @@ function activate(context) {
 				nl = nl.replace(/uact=.*?\&/g, '');
 				nl = nl.replace(/aqs=.*?\&/g, '');
 				nl = nl.replace(/sourceid=.*?\&/g, '');
+				// nl = nl.replace(/ie=.*?[\&\)]/g, ''); // takes off trailing `)`
+				nl = nl.replace(/ie=.*?\&/g, '');
+				nl = nl.replace(/sa=.*?\&/g, '');
+				nl = nl.replace(/stick=.*?\&/g, '');
+
+				// UTM
+				nl = nl.replace(/utm_campaign=.*?\&/g, '');
+				nl = nl.replace(/utm_medium=.*?\&/g, '');
+				nl = nl.replace(/utm_source=.*?\&/g, '');
+				nl = nl.replace(/hsCtaTracking=.*?\&/g, '');
 				// TODO doesn't get last one as it doesn't end with `&`
 				// TODO more elegant would be remove all params that are not `q`...
 				// TODO   if it has `https://www.google.com/search?`:
