@@ -41,7 +41,10 @@ function activate(context) {
 			console.log('orig: ' + line);
 			let linkStart = line.indexOf('(http');
 			if (-1 != linkStart) {
-				let nl = line.replace(/[\[|\]]/g, ''); // remove square brackets
+				let nl = line;
+				
+				// TODO factor these into func
+				nl = nl.replace(/[\[|\]]/g, ''); // remove square brackets
 
 				// remove site title
 				nl = nl.replace(/ - Google Search /g, '');
@@ -65,6 +68,7 @@ function activate(context) {
 				nl = nl.replace(/ei=.*?\&/g, '');
 				nl = nl.replace(/ved=.*?\&/g, '');
 				nl = nl.replace(/gs_l=.*?\&/g, '');
+				nl = nl.replace(/gs_lcp=.*?\&/g, '');
 				nl = nl.replace(/uact=.*?\&/g, '');
 				nl = nl.replace(/aqs=.*?\&/g, '');
 				nl = nl.replace(/sourceid=.*?\&/g, '');
@@ -72,6 +76,7 @@ function activate(context) {
 				nl = nl.replace(/ie=.*?\&/g, '');
 				nl = nl.replace(/sa=.*?\&/g, '');
 				nl = nl.replace(/stick=.*?\&/g, '');
+				nl = nl.replace(/sclient=.*?\&/g, '');
 
 				// UTM
 				nl = nl.replace(/utm_campaign=.*?\&/g, '');
@@ -95,6 +100,20 @@ function activate(context) {
 					newlines.push(line);
 				}
 			}
+
+			let suspendedLinkStart = line.indexOf('(chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html');
+			if (-1 != suspendedLinkStart) {
+				let nl = line;
+				console.log('newline: ' + nl);
+				// suspended (by The Great Suspender) tabs in TabsOutliner are of form:
+				// Page Title (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Title&pos=x&uri=http://domain.com/path)
+				// e.g.
+				//     Devs - S1E1 "Episode 1" - Music and List of Songs (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Devs%20-%20S1E1%20%22Episode%201%22%20-%20Music%20and%20List%20of%20Songs&pos=462&uri=https://www.what-song.com/Tvshow/100565/Devs/e/117188)
+				// just need to take out `chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Devs%20-%20S1E1%20%22Episode%201%22%20-%20Music%20and%20List%20of%20Songs&pos=462&uri=`
+				// i.e. from `chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/` to `&uri=` inclusive
+				// and apply "normal" process
+			}
+
 		})
 
 		let newText = newlines.join('\n');

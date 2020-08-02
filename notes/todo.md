@@ -1,8 +1,26 @@
 
 ## do
 
+    pete namlook sequential - Google Search (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=pete%20namlook%20sequential%20-%20Google%20Search&pos=693&uri=https://www.google.com/search?ei=KkbQXtGKLozvgAa0s6HICA&q=pete+namlook+sequential&oq=Sequential+namlook&gs_lcp=CgZwc3ktYWIQARgAMgYIABAWEB46BAgAEEc6BAgAEEM6AggAOgUIABCRAlDkEljMImCCLmgAcAF4AIABmwKIAfQJkgEFMi40LjKYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab)
+
+
+suspended (by The Great Suspender) tabs in TabsOutliner are of form:
+Page Title (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Title&pos=x&uri=http://domain.com/path)
+```
+Winamp for Mac | Winamp for Windows, Mac, Android (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Winamp%20for%20Mac%20%7C%20Winamp%20for%20Windows%2C%20Mac%2C%20Android&pos=667&uri=http://www.mywinamp.com/winamp-for-mac/)
+
+fancam stan - Google Search (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=fancam%20stan%20-%20Google%20Search&pos=1120&uri=https://www.google.com/search?q=fancam+stan&oq=fancam+stan&aqs=chrome..69i57.2832j0j1&sourceid=chrome&ie=UTF-8)
+    Stan Twitter - Wikipedia (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Stan%20Twitter%20-%20Wikipedia&pos=2240&uri=https://en.wikipedia.org/wiki/Stan_Twitter)
+```
+
+200225 pytest.md -> [200225 pytest.md](200225%20pytest.md)
+
 linkify: remove last param as well
   should get text between () and match with `key=.*[\&$]`
+
+`&gs_lcp=CgZwc3ktYWIQAzIFCCEQoAE6BwgAEEcQsAM6BggAEAcQHjoICAAQCBAHEB46CAgAEAcQBRAeUN7YB1iDhQhg6IYIaAVwAHgAgAFyiAH6BpIBBDEzLjGYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&uact=5`
+`biw=1440&bih=765&source=univ&tbm=isch`
+`&ved=2ahUKEwirjN-c9tbqAhVTQUEAHVXXBFcQsAR6BAgFEAE#imgrc=6sT6uSYJhCqzXM`
 
 per-site transforms, e.g. if amazon, remove all after final slash:
 `        Digitech TRIO Plus Band Creator Guitar Pedal with Looper: Amazon.co.uk: Musical Instruments (https://www.amazon.co.uk/dp/B01AV60KLQ/ref=sspa_dk_detail_1?psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFHNlEyVUQ1UEozS0wmZW5jcnlwdGVkSWQ9QTA3OTEyOTExMU9JQThJUkRPVUhVJmVuY3J5cHRlZEFkSWQ9QTEwMjUzNjBDTFQxMEpXRFc5WDEmd2lkZ2V0TmFtZT1zcF9kZXRhaWwyJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==)`
@@ -13,11 +31,23 @@ or, remove all after slash by default?
 
 `\?_encoding.*` ?
 
+```
  - Super User 
  - MacRumors 
  | MacRumors Forums 
 : Amazon.co.uk: Musical Instruments 
+```
 
+```
+sharktopus vs pteracuda - Google Search (https://www.google.com/search?biw=1420&bih=777&ei=XEbIXpyeCret1fAPv5eZmAk&q=sharktopus+vs+pteracuda&oq=sharkts+vs+pteracuda&gs_lcp=CgZwc3ktYWIQARgAMgQIABANMgQIABANMgQIABANMgQIABANMgQIABANMgQIABANMgQIABANMgQIABANMgQIABANMgQIABANUPQzWPQzYLJBaABwAHgAgAFhiAGnAZIBATKYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab)
+```
+biw
+bih
+ei
+gs_lcp
+
+
+```
 Window
     free screen recorder windows - Google Search (https://www.google.com/search?q=free+screen+recorder+windows&oq=free+screen+recorder+windows&aqs=chrome..69i57j69i64l2.6175j0j1&sourceid=chrome&ie=UTF-8&foo=bar)
     free screen recorder windows - Google Search (https://www.google.com/search?q=free+screen+recorder+windows&oq=free+screen+recorder+windows&aqs=chrome..69i57j69i64l2.6175j0j1&sourceid=chrome&ie=UTF-8&stick=H4sIAAAAAAAAAOOQUeLSz9U3yLA0rzQ0NpLOL0jNUyjOLy1KTlUoTi5KBfKKUpPzi1JSi6Jk0oB8dFGF8sy8lPzy4lOMYHOMCrMtzM1PMXKDOIYGGXllZRVQqbKKtJzyXCjHtKqkMCsLyoFYDjPBrCCjuPgXo7Q_bqcsYuVwAwoUp6YWAQCte4VcwQAAAA&sa=X&ved=2ahUKEwi6hM6q6sHlAhUkRhUIHfYbD-UQxA0wFnoECAwQCg&foo=bar)
@@ -28,9 +58,34 @@ Window
         Freeseer - Google Search (https://www.google.com/search?q=Freeseer&stick=H4sIAAAAAAAAAOOQUeLSz9U3yLA0rzQ0NpLOL0jNUyjOLy1KTlUoTi5KBfKKUpPzi1JSi6Jk0oB8dFGF8sy8lPzy4lOMYHOMCrMtzM1PMXKDOIYGGXllZRVQqbKKtJzyXCjHtKqkMCsLyoFYDjPBrCCjuPgXo7Q_bqcsYuVwAwoUp6YWAQCte4VcwQAAAA&sa=X&ved=2ahUKEwi6hM6q6sHlAhUkRhUIHfYbD-UQxA0wFnoECAwQCg)
         Main page - SimpleScreenRecorder - Maarten Baert's website (https://www.maartenbaert.be/simplescreenrecorder/)
             Get Simple Screen Recorder - Microsoft Store (https://www.microsoft.com/en-us/p/simple-screen-recorder/9n5mvvbd0tgw)
+```
 
+FireFox export tabs URLs addon:
+```
+Oxford University professor given security guards for lectures after threats from transgender activists
+https://www.telegraph.co.uk/news/2020/01/23/oxford-university-professor-given-security-guards-lectures-threats/
+```
 
+Linkify:
+aws stuff:
+```
+sc_icampaign
+sc_ichannel
+sc_ioutcome
+sc_icontent
+sc_iplace
+trkCampaign
+trk
+whats-new-cards.sort-by
+whats-new-cards.sort-order
+mkt_tok
+```
+
+` - Wikipedia `
+
+```
 (7) Mathew Kimani  LinkedIn(https://www.linkedin.com/in/mathewkimani/?midToken=AQEM-qbU0mVlng&trk=eml-email_m2m_invite_reminder_02-hero-4-profile_text&trkEmail=eml-email_m2m_invite_reminder_02-hero-4-profile_text-null-bh60s%7Ejzmas5i6%7Eai-null-neptune%2Fprofile%7Evanity%2Eview)
+```
 
 trim whitespace after e.g. [VS Code API  Visual Studio Code Extension API ](https://code.visualstudio.com/api/references/vscode-api#TextEditor)
 don't trim whitespace before?

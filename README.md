@@ -27,15 +27,17 @@ I found myself manually converting tab trees copied from Tabs Outliner into Mark
 ## Installation
 
 To install, use, `code --install-extension <extension.vsix>`, e.g. 
-
 ```
 code --install-extension linkify-0.0.1.vsix`
 ```
 
 ## Usage
 
-I bound `linkify` command to `shift+cmd+i`
+I bound the `extension.linkify` command to `shift+cmd+i` on MacOS.
 
-Select text containing Tabs Outliner tab trees, hit your shortcut, et voila!
+* Copy links or trees of links from the Tabs Outliner trees by doing right-click, copy (paid version only)
+* Paste into markdown document in VS Cde
+* Select your links
+* Hit your shortcut, et voila!
 
 Unwanted (by me) cruft is taken out of link text and from URLs for sites I often copy-paste like this, the rules for this are specific to my needs and a work in progress.
