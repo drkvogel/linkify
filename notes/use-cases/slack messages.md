@@ -113,3 +113,38 @@ Remember I mentioned to you, if you feel it would be helpful to get Lincoln on a
 11:59
 He is no longer under contract with us at this point
 ---
+
+### slack email
+
+```
+You have new messages in ncg-digital (ncg-digital.slack.com)
+From #jira  
+
+Jira   August 19th at 12:31 PM
+Ruslan Gonzalez created a Story ND-85 Implement testing filebeat config on a commit
+
+Jira   August 23rd at 10:46 AM
+@Chris Neil created a Story ND-86 Deploy to Dev
+
+Jira   August 23rd at 10:46 AM
+@Chris Neil created a Story ND-87 Deploy to Stg
+
+Jira   August 23rd at 10:46 AM
+@Chris Neil created a Story ND-88 Deploy to Prod
+
+Jira   August 23rd at 10:51 AM
+@Chris Neil created a Story ND-89 Document the deployment process
+
+Jira   August 23rd at 10:54 AM
+@Chris Neil created a Story ND-90 Update deployment docuement
+```
+to
+```
+You have new messages in ncg-digital (ncg-digital.slack.com) From #jira  
+Jira   August 19th at 12:31 PM Ruslan Gonzalez created a Story ND-85 Implement testing filebeat config on a commit
+Jira   August 23rd at 10:46 AM @Chris Neil created a Story ND-86 Deploy to Dev
+Jira   August 23rd at 10:46 AM @Chris Neil created a Story ND-87 Deploy to Stg
+Jira   August 23rd at 10:46 AM @Chris Neil created a Story ND-88 Deploy to Prod
+Jira   August 23rd at 10:51 AM @Chris Neil created a Story ND-89 Document the deployment process
+Jira   August 23rd at 10:54 AM @Chris Neil created a Story ND-90 Update deployment docuement
+```

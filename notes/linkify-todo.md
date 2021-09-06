@@ -1,6 +1,137 @@
 
 ## do
 
+linkify local relative links
+linkify doesn't remove `Window` on Windows/WSL if file has `CRLF` line endings
+
+`?xtor=CS8-1000-%5BIn_Article_Promo_Box%5D-%5BNews_Promo_In_Article%5D-%5BNews_Promo_In_Article_BBCGeneric%5D-%5BPS_PROGRAMMES~N~~laptopfatigue_bbscotland_0110_news%5D`
+linkify: ` Flatmate from SpareRoom `
+
+tableau bi - Google Search (https://www.google.com/search?rlz=1C1CHBF_enGB813GB813&sxsrf=ALeKk00cubmt-_Yx6qc5tCzzscuQIiCpAw%3A1615891586184&ei=goxQYMzhCriZ1fAPl9imqAg&q=tableau+bi&oq=Tableau+b&gs_lcp=Cgdnd3Mtd2l6EAEYAjIFCAAQkQIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgAEEcQsAM6DAgAELEDEEMQRhD5AToECAAQQzoKCAAQsQMQgwEQQzoFCAAQsQM6CAgAELEDEIMBUNTFtylYv8e3KWCQ3rcpaAFwAngAgAGjAYgBxwOSAQMwLjOYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=gws-wiz)
+
+notes/email-condense.md
+notes/slack messages.md
+projects/repos/linkify/notes/use-cases/msteams.md
+
+` - Wikipedia `
+
+diigo: [#productivity - chrisjbird @ Diigo](https://www.diigo.com/user/chrisjbird?query=%23productivity)
+
+okc: `?cf=quickmatch`
+
+linkify:
+`?sc_channel=em&sc_campaign=EMEA_FIELD_WEBINAR_innovate-AIML_20210224_7014z000001MJbu&sc_medium=em_320503&sc_content=REG_t1_field&sc_geo=emea&sc_country=mult&sc_outcome=reg&sc_publisher=aws&trkCampaign=emea21_innovatemlq1&trk=em_inv3_emea21_innovatemlq1_320503&mkt_tok=eyJpIjoiTW1WaE1HWmhZVEZqTW1KaCIsInQiOiJIZDg5QkJCb0FcL3NMenBiQWFNUUdkNG9GOWMwaSsyMGZvblBUdWlJU3pieGx4VVR5SVhuMno0bGpHRWFONTNocytLXC9oVjBteEdQUVU4TDAxYTJ0UlF3OTlyblNhTnlnODYrek5tZDN5R21mSWc2azMrRCtxOE9weFdSUGRmeUdUcHE3aWpsWFRaUnByVVNVVHBnaGxVQT09In0%3D`
+`?rv=ea1_v2&_xtd=gatlbWFpbF9jbGlja9oAJGVmMmFkYWZlLWNkZDItNDYyMC04MzkxLTNhMjE1NzgyZDhjZg&utm_source=promo`
+`?mkt_tok=eyJpIjoiWkdRMk5qWTFaR05qWkRWaCIsInQiOiJHeklTdGsrYmw5TVk1REtWc2NGS3dmREV6SXZBa2Y1OFU2ankxK0RlQjdUOGdUTUZza2RPdkNvdHByWmFFU01UaHU4NVFkdHkydWU3aFFxQnJVOWltNmpjNTJsXC9ZV0JyK1VxWHFRVmxUZitSOXdiZ2dMMzFNcDZcLzNJRzg3RzhEdktkaWlnc0lrNCt2YWZjZkZFTGxQUT09In0%3D`
+`?utm_term=&hsa_acc=4311736126&hsa_cam=11524429883&hsa_grp=115116695169&hsa_ad=497323121253&hsa_src=ytv&hsa_tgt=aud-1138752900128&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAiAmrOBBhA0EiwArn3mfDayZr2umjwWmubh0R2BGk1UTO5Ipg5yqebx92KnBF7OqOEcQgRnfRoCTjUQAvD_BwE`
+
+linkify: ` - Super User `, ` - Server Fault `, `(99+) `, `  LinkedIn `, `?gc=usa&utm_content=0&utm_serial=&utm_term=`
+linkify: `?midToken=AQEM-qbU0mVlng&midSig=2XBTVcSoa1tFE1&trk=eml-email_m2m_invite_single_01-hero-4-prof%7Ecta&trkEmail=eml-email_m2m_invite_single_01-hero-4-prof%7Ecta-null-bh60s%7Eklgpf5l9%7Ero-null-neptune%2Fprofile%7Evanity%2Eview`
+`?&channel=advertising&subchannel=gdn&campaign=9971224211&channel=paid_search&subchannel=cpc&campaign=9971224211&gclid=Cj0KCQiA7NKBBhDBARIsAHbXCB7jlvPuQjvl8qU3tAzpLHvOHlIFG4SgrHOZnvHejMm7ni05FKlDLEAaAoWuEALw_wcB`
+`?ck_subscriber_id=1095196238`
+
+`?at_custom3=%40BBCRadio4&at_custom1=%5Bpost+type%5D&at_custom2=twitter&at_medium=custom7&at_campaign=64&at_custom4=4D55B590-6D58-11EB-86B9-964D16F31EAE` (BBC iPlayer)
+linkify: `\([0-9]+\)`
+linkify take out google cruft
+  [What does it all mean?](file:///home/kvogel/p/general/dev/blog/210204-google-search-query-args.md)
+  `&client=ms-android-samsung&source=lnms&biw=1366&bih=695&dpr=1`
+`?xtor=CS8-1000-Discovery_Cards-Multi_Site-SL02-PS_FOOD~N~~A_Classipancakerecipe` (bbc.co.uk)
+linkify: `- Stack Overflow `-...
+linkify: `&gs_lcp=CgZwc3ktYWIQAzIFCCEQoA...l6wAEB&sclient=psy-ab&uact=5`
+linkify: `gs_lcp=CgZwc3kt...EHZ3dzLXdpeg&sclient=psy-ab&uact=5`
+linkify: `gs_lcp` `sclient` `uact`
+linkify: `&gs_lcp=CgZwc3ktYWI...d2l6yAEIwAEB&sclient=psy-ab`
+linkify: `&gs_ssp=eJzj4tLP1TcwKsg...LXdpesABAQ&sclient=psy-ab`
+linkify - take out [] brackets, ` - YouTube`, ` - Google Search` etc
+linkify take out e.g. `(21) ` from YouTube
+linkify: ebay _trkparms _trksid
+
+linkify google, yt, install instructions
+linkify install instructions
+linkify remove `(2) ` etc from fb, yt
+linkify handle ff Export Tabs URLs, e.g.:
+linkify: doesn't get: `^Window$` on Windows
+linkify ` - Medium `
+linkify: `?int_source=traffic.outbrain&int_medium=traffic.outbrain&int_term=traffic.outbrain&int_content=traffic.outbrain&int_campaign=traffic.outbrain`
+linkify take off extra param...
+linkify: ` - Ableton Forum `
+
+linkify:
+```
+Kilo Developer’s Manual — Kilohertz 1.0.0 documentation (file:///C:/Users/cbird/Projects-work/primrose/doc/developer/_build/html/index.html)
+```
+linkify: slack: ` (edited) `, `New`
+join text with timestamps and then newline (blockquote?)
+
+linkify: `Window (popup)`
+linkify: put `%20` and leading `/` in local links
+linkify: ` - Confluence `
+linkify: `gs_lcp`, `sclient`
+
+tabs copied from TabOutliner into markdown links- linkify
+  strip non-essential query string params from Google search
+
+linkify
+  auto-linkify on paste into vscode?
+linkify:
+  last param
+  new google params - bwi?
+  great sus
+  release??
+    "contribute to open source projects"?
+linkify jgrund re, publish
+linkify: ` - Jira `, ` - StackOverflow `
+
+linkify
+```
+apns aws - Google Search (https://www.google.com/search?rlz=1C5CHFA_enGB838GB838&ei=mlm0XJKcHeii1fAP39W76AU&q=apns+aws&oq=apns+aws&gs_l=psy-ab.3..0i7i30j0l2j0i8i30l7.4927.4927..6501...0.0..0.57.57.1......0....1..gws-wiz.......0i71.Z1vssfEs-TU)
+```
+->
+```md
+[apns aws](https://www.google.com/search?oq=apns+aws)
+```
+
+foreach line that has `(http` in it:
+  trim whitespace
+  remove ` - Google Search ` etc
+  add square brackets
+  if it has `https://www.google.com/search?`:
+    remove everything until `oq=`
+    remove everything the rest
+etc
+
+
+installed [The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg/)
+  [chrome-tabs.md](/dev/apps/chrome/chrome-tabs.md)
+
+linkify:
+suspended tabs in TabsOutliner are of form:
+Page Title (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Title&pos=x&uri=http://domain.com/path)
+```
+Winamp for Mac | Winamp for Windows, Mac, Android (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Winamp%20for%20Mac%20%7C%20Winamp%20for%20Windows%2C%20Mac%2C%20Android&pos=667&uri=http://www.mywinamp.com/winamp-for-mac/)
+```
+
+
+
+linkify: `?zypmtr=192547c403939d06153d33b440016af8d591d9a768317226ff1a522bf40b869e&jry=5996965e-b574-11ea-a318-0a6cd457aafc`
+linkify:
+[cls python](https://www.google.com/search?q=cls+python&gs_lcp=CgZwc3ktYWIQARgCMgQIIxAnMggIABCxAxCRAjIFCAAQkQIyCggAELEDEIMBEEMyBAgAEEMyBwgAELEDEEMyBQgAELEDMgcIABAUEIcCMggIABCxAxCDATIICC4QxwEQrwE6BwgjELADECc6CQgAELADEA0QHlCdVlidVmCLb2gAcAB4AIABrgGIAaMCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab)
+
+`file:///` links, e.g.: `HANA DB Integration — Kilohertz 1.0.0 documentation (file:///C:/Users/cbird/Projects-work/primrose/doc/developer/_build/html/integration/sap-hana-db.html)`
+
+`?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAALHCbHDdmXFxBoGyDWrERkw8wdvkFkOUvFDvS9NAb5VsMSO6Qe9wQhK8D7Xmx6KafXC4X-mAFmIG-GdXDY5EPu9T8jmqdQG_wunUumMGGyTIppvQeRsZDgArlqH0P9GOnL1cBAUb9p4bLBN-OmzFljOlIYRY0a3ZJEB4RKEQ1Wja`
+
+linkify: `gs_ssp=eJzj4tTP1TcwNDNOyTNg9JIozqlUSMxLUSjJSFVIS8zNBHKLS_LzUgHOagwF&gs_lcp=CgZwc3ktYWIQARgBMgUIABCRAjIECC4QQzIECC4QQzIECAAQQzIECAAQQzIECC4QQzIECC4QQzIECAAQQzICCAAyBQgAEJECOgQIABBHOgoIABCxAxCDARBDOgoIABCxAxCDARAKOgcIABCxAxBDOgIILlDWOljfO2CRSWgAcAJ4AIABuwGIAd0CkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab`
+
+linkify: `?utm_content=Your+Download+%2B+Welcome+to+EDMProd&utm_campaign=awb-delivery-new`
+
+linkify: quick n dirty slack "linkify" - join lines wherever there is a time HH:MM
+
+linkify:
+`devops/docker/docker-mac.md` -> `[docker mac](/devops/docker/docker-mac.md)`
+get bit between last `/` and `.md`, e.g. `docker-mac`, replace `-` with `space`, put at start of line between `[` and `]`, put the link between `(/` and `)`
+`&gs_lcp=CgZwc...BCMABAQ&sclient=psy-ab`
+
     pete namlook sequential - Google Search (chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=pete%20namlook%20sequential%20-%20Google%20Search&pos=693&uri=https://www.google.com/search?ei=KkbQXtGKLozvgAa0s6HICA&q=pete+namlook+sequential&oq=Sequential+namlook&gs_lcp=CgZwc3ktYWIQARgAMgYIABAWEB46BAgAEEc6BAgAEEM6AggAOgUIABCRAlDkEljMImCCLmgAcAF4AIABmwKIAfQJkgEFMi40LjKYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab)
 
 
@@ -124,6 +255,27 @@ convert to TypeScript
 
 auto-linkify on paste into vscode?
 
+[linkify](https://www.google.com/search?q=linkify&ie=UTF-8)
+[linkify - crates.io: Rust Package Registry ](https://crates.io/crates/linkify)
+[Ben Alman » JavaScript Linkify » Examples » Linkify ](http://benalman.com/code/projects/javascript-linkify/examples/linkify/)
+[Ben Alman » JavaScript Linkify: Process links in text ](http://benalman.com/projects/javascript-linkify/)
+[cowboy/javascript-linkify: JavaScript Linkify: Process links in text ](https://github.com/cowboy/javascript-linkify/)
+
+#### linkify
+
+`vsce package` -> `.vsix`-
+
+```
+kvogel@kvogel-elitebook:~/Projects/linkify$ npm i -g vsce
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib'
+kvogel@kvogel-elitebook:~/Projects/linkify$ sudo npm i -g vsce
+```
+where is `.vsix`? gdrive? is now
+
+```
+kvogel@kvogel-elitebook:~/Projects/linkify$ code --install-extension linkify-0.0.1.vsix 
+Installing extensions... Extension 'linkify-0.0.1.vsix' was successfully installed.
+```
 
 ## done
 

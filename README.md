@@ -33,7 +33,7 @@ code --install-extension linkify-0.0.1.vsix`
 
 ## Usage
 
-I bound the `extension.linkify` command to `shift+cmd+i` on MacOS.
+I bound the `extension.linkify` command to `shift+cmd+i` on MacOS or `shift+alt+i` on Windows.
 
 * Copy links or trees of links from the Tabs Outliner trees by doing right-click, copy (paid version only)
 * Paste into markdown document in VS Cde
