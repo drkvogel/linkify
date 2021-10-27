@@ -233,7 +233,32 @@ if it has `https://www.google.com/search?`:
   keep until `&`, remove the rest
 
 
+wtf? `#q=~(infinite~true~filters~(postType~(~'page~'post~'aa_book~'aa_event_session~'aa_experience_report~'aa_glossary~'aa_research_paper~'aa_video)~tags~(~'mob*20programming))~searchTerm~'~sort~false~sortDirection~'asc~page~1)`
 
+`utm_term=exit_overlay&utm_content=most_targeted_restore_energy`
+
+plex: 
+in "on Plex" movies e.g.
+[Cropsey ](https://app.plex.tv/desktop/#!/provider/tv.plex.provider.vod/details?key=%2Flibrary%2Fmetadata%2F5e3c1697c9eff00040e90799)
+
+Five sure-fire ways to boost your house price (https://www.telegraph.co.uk/money/consumer-affairs/five-sure-fire-ways-boost-house-price/?WT.mc_id=e_DM1497796&WT.tsrc=email&etype=Edi_FPM_New&utmsource=email&utm_medium=Edi_FPM_New20210929&utm_campaign=DM1497796)
+
+The Standing 7-Minute Workout - The New York Times (https://www.nytimes.com/2021/01/22/well/standing-7-minute-workout.html?campaign_id=190&emc=edit_ufn_20211008&instance_id=42256&nl=updates-from-the-newsroom&regi_id=98468706&segment_id=70997&te=1&user_id=4f7df85f7511a39a1ec7b6446108ee84)
+
+new google params?
+`&si=AHuW2sSqoPLh_3JqG3wzgzWubtsUCTasPrvfsoKuREQTF2YDFapT6yZV9_NopoU_MDzaeVLaJjwjJu5IUziBhSLyQsOTh-hTBzQmUONhfvsxwb_rSjjSIuFn91Uh3gupaO3vZf1XFapwCldCjOndwJsO7L9BoJsQ9fw16L187en43YWKeWBUwetpsgDfy1LdcQzhUwj04sntt8RU_CNkQcfd7y36O42neRDKxOOjqKQNl18tsg3z6JCj1VEbh9gzzHkCmLkXcd9SPsaEEwO69LoxRum59-BYSC_WdriZtF0UsV4Xl27VpGpGumlIfFfMv4oUQ5ogAYXCHsMtsdvfiTCS1JbgE-2biBvdEhs-1e6fNSI4YPTsk7DddkAMEjynX_MzhDo9dc-_B-tG0zfvJ2QvGSQreb1Krg3R4fwAe08IlUQlrmrsgKkW1ENymzuIv3YaVcb-mjE_YsjIdS3N2mOYeXQ6Cw76rYMgoh965T-W6nsjWGKWo1XzQsetM8DR6WknXMSny0q3l3YYxCAbGMEbYoSUP_4mxP7ZUv649KxyT84v-M_x8ot3JlDsFp4_nS-skYK-99IGuaUKHBO8ilOXBpcqqcm5D7X3iof8vGNKqiACXzeG7BOze-UFm-dtCaJKqGgMnYoB&ved=2ahUKEwir6J-Ax8LzAhWKilwKHV0OAKIQ1QJ6BAghEAE`
+`&si=AHuW2sQYvCvj4Yn4A4Gzdp478Wvc_tg4WYIDtXzL8wV77C6caKnAm920m9Q6ghIusJABDZ6w_nwgM8OH-sP1yfwfha9QEWP6DWJNQrK8MJfSt62R5hK3guEOrHRaq5NxsiaRJHgblthaL92czPFqVlyDALydfpmQfgHC8bgCeEr-0E2DjTnp22IAd0Oap9b42cND-Y7MLpReTt2j55mVm34brHpQnE0tyneJiQNPROQvaU_cExYXtk3kgM3PduLOYcpV_1eusMKb8VpMFpJWZ2gFNsG4Jyxz46kKPIsbERgABpMkTumCwJiZk86GTQ_coMFQB_-92kQjUUsYZ8-Pq9j58uV0Hadae6nM3W1DP5MPul7JhYvxgcYk-cclVA8rK_qa5A2qYn8HV5Yr5D_9g73WmEP0KT-hRd3TYdsbTLjPETt1mIkenTgu2oPrJOojOCO88QhRDA14Drd5eiBSVuI7PrcAdjb_DDKaiUGNkqI98na0-2LuprCZQNxuG_GAAl7muuHIo6Jd1GnfjnkKdgjc0DUslsim3L4xvhDk_evakj4ozkUdi5p38r3e0ESurVeeXsO1EpGlR_YafjY_ExWcpwkoEhvrriDiH6O1ExbmFF3T-hkZA95xEKQIi5jsMGHqt5uFAlH7a2WrW597BFDkDqkEIDnWQQ%3D%3D&ved=2ahUKEwir6J-Ax8LzAhWKilwKHV0OAKIQ1QJ6BAgqEAE`
+
+
+`&context=hub.search.movie`
+`&context=home%3Ahub.movies.recommended~2~2` where 
+```re
+recommended~\d+~\d+
+```
+`context=preplay%3Ahub.similarTitles~0~0`
+```re
+similarTitles~\d+~\d+
+```
 
 Thank You (https://www.amazon.co.uk/gp/buy/thankyou/handlers/display.html?ie=UTF8&asins=B01E4YMY56&isRefresh=1&orderId=202-1689678-8055509&purchaseId=204-1632039-1022731&ref_=chk_typ_browserRefresh&viewId=ThankYouCart)
     Zoom G1on/UK Guitar Effects Pedal: Amazon.co.uk: Musical Instruments (https://www.amazon.co.uk/Zoom-G1on-Guitar-Effects-Pedal/dp/B00HS3DHCU/ref=pd_lutyp_crtyp_simh_5_3/259-4090932-2643241?_encoding=UTF8&pd_rd_i=B00HS3DHCU&pd_rd_r=26240960-02ce-40c4-b551-da9867963736&pd_rd_w=vgB7j&pd_rd_wg=F4dWq&pf_rd_p=e1a45040-d2db-41e8-80fa-8f32b208956a&pf_rd_r=V4XX8487NBVER1TWD41X&psc=1&refRID=V4XX8487NBVER1TWD41X)
@@ -250,6 +275,10 @@ if it has `https://www.google.com/search?`:
   remove everything the rest
 write tests
 convert to TypeScript
+
+
+amazon.co.uk:
+ref=asc_df_1785042181/?tag=googshopuk-21&linkCode=df0&hvadid=375464596693&hvpos=&hvnetw=g&hvrand=16303934276501546995&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1006976&hvtargid=pla-785929647500&psc=1&th=1&psc=1&tag=&ref=&adgrpid=79766931554&hvpone=&hvptwo=&hvadid=375464596693&hvpos=&hvnetw=g&hvrand=16303934276501546995&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1006976&hvtargid=pla-785929647500
 
 ## defer
 

@@ -1,5 +1,6 @@
 
 
+
 ```
 [11:45] Armando García González
     I think you still have the stand up meeting opened
@@ -47,4 +48,22 @@ to
 >​[12:55] Ruslán González Burim All is updated properly
 ```
 
-get rid of `Edited​`
+get rid of `Edited​`, `({n} liked)`
+get rid of link (`<https://teams.microsoft.com/{...}>`)
+
+also these get copied somehow:
+```
+the time field for timestamp is alright by Ruslán González Burim
+Ruslán González Burim09:07
+the time field for timestamp is alright
+```
+from meeting chat?
+
+### strip out `ZERO WIDTH SPACE`
+
+/home/kvogel/projects/general/work/ncg/notes/210909-msteam-encoding.md
+  >text copied from msteams chat includes a weird byte sequence that breaks markdown formatting
+  >could strip out with linkify?
+  >Character name	`ZERO WIDTH SPACE` Hex code point `200B`, Decimal code point `8203`, Hex UTF-8 bytes `E2 80 8B`
+  >either way, text copied from MSTeams contains a `E2 80 8B` sequence instead of `0A 0A`
+
