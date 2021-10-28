@@ -2,6 +2,8 @@
 ## do
 
 linkify local relative links
+linkify: `notes/211028-cn-issues.md` -> `[cn issues](/notes/211028-cn-issues.md)`
+
 linkify doesn't remove `Window` on Windows/WSL if file has `CRLF` line endings
 
 `?xtor=CS8-1000-%5BIn_Article_Promo_Box%5D-%5BNews_Promo_In_Article%5D-%5BNews_Promo_In_Article_BBCGeneric%5D-%5BPS_PROGRAMMES~N~~laptopfatigue_bbscotland_0110_news%5D`
@@ -45,6 +47,7 @@ linkify: `&gs_ssp=eJzj4tLP1TcwKsg...LXdpesABAQ&sclient=psy-ab`
 linkify - take out [] brackets, ` - YouTube`, ` - Google Search` etc
 linkify take out e.g. `(21) ` from YouTube
 linkify: ebay _trkparms _trksid
+`?_trkparms=amclksrc%3DITM%26aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D20180816085401%26meid%3D74d57ec728b34e769963f1938720ae5e%26pid%3D100970%26rk%3D1%26rkt%3D2%26sd%3D304085750293%26itm%3D304085750293%26pmt%3D0%26noa%3D1%26pg%3D2380057%26brand%3DFender&_trksid=p2380057.c100970.m5481&_trkparms=pageci%3Ab9227aa1-3826-11ec-912d-ea91b3089b07%7Cparentrq%3Ac869d1f217c0a0f39b206fc2ffe0655c%7Ciid%3A1&autorefresh=true`
 
 linkify google, yt, install instructions
 linkify install instructions
