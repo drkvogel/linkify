@@ -11,6 +11,8 @@ linkify: ` Flatmate from SpareRoom `
 
 tableau bi - Google Search (https://www.google.com/search?rlz=1C1CHBF_enGB813GB813&sxsrf=ALeKk00cubmt-_Yx6qc5tCzzscuQIiCpAw%3A1615891586184&ei=goxQYMzhCriZ1fAPl9imqAg&q=tableau+bi&oq=Tableau+b&gs_lcp=Cgdnd3Mtd2l6EAEYAjIFCAAQkQIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgAEEcQsAM6DAgAELEDEEMQRhD5AToECAAQQzoKCAAQsQMQgwEQQzoFCAAQsQM6CAgAELEDEIMBUNTFtylYv8e3KWCQ3rcpaAFwAngAgAGjAYgBxwOSAQMwLjOYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=gws-wiz)
 
+tbm=isch&source=iu&ictx=1&fir=LamPXD4NWrLHSM%252CdaXo6RJw9v94wM%252C_%253BCo0no0momIX9AM%252Ctn_OU20WJRsxIM%252C_%253B1x-ZamU2zdrnmM%252C5WPNNbadisMVCM%252C_%253BbGQT3pYOpZFNJM%252CaONWd532u90ZvM%252C_%253Bk-lakwWxpdNoGM%252CWFcxznAjN5IvKM%252C_%253BtKTCzR2otrDccM%252CVUGaI3NXNISJsM%252C_%253BKm8poRQppqKwRM%252CY7mOstV54VTYJM%252C_%253BNcL6PDwFD0r9sM%252CQ_yGBEJHuJg-JM%252C_%253Bfp7QrGJAcMC9sM%252CetLwBBAh5oR9cM%252C_%253BJ8Lyb3DbgS4lWM%252C5RqYgzFrhLbJRM%252C_&vet=1&usg=AI4_-kQLJMnC85xyxu3DX4AHRJARbCaLNg&ved=2ahUKEwjR98qL2qX0AhWWEMAKHYkRA-MQ9QF6BAgbEAE#imgrc=LamPXD4NWrLHSM
+
 notes/email-condense.md
 notes/slack messages.md
 projects/repos/linkify/notes/use-cases/msteams.md
@@ -20,6 +22,10 @@ projects/repos/linkify/notes/use-cases/msteams.md
 diigo: [#productivity - chrisjbird @ Diigo](https://www.diigo.com/user/chrisjbird?query=%23productivity)
 
 okc: `?cf=quickmatch`
+
+`?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAALs5HVSjn-X6Q4cj1cmVPi2tWtR0kbYR6V4Zv1rIIC5pgK5GagfdXocR5LppG-qDUMPhO6t6Prdf3s_nir_xNgQGKPnCRqeXvue2jW31g1095SeiLreNcXRKm9HPCrvSs63RSBEa6LA-AMlwy67EQzmP02RXP8ZUb-o8ICobi_YJ`
+
+`(99+) Gardin Agritech : Overview  LinkedIn `
 
 linkify:
 `?sc_channel=em&sc_campaign=EMEA_FIELD_WEBINAR_innovate-AIML_20210224_7014z000001MJbu&sc_medium=em_320503&sc_content=REG_t1_field&sc_geo=emea&sc_country=mult&sc_outcome=reg&sc_publisher=aws&trkCampaign=emea21_innovatemlq1&trk=em_inv3_emea21_innovatemlq1_320503&mkt_tok=eyJpIjoiTW1WaE1HWmhZVEZqTW1KaCIsInQiOiJIZDg5QkJCb0FcL3NMenBiQWFNUUdkNG9GOWMwaSsyMGZvblBUdWlJU3pieGx4VVR5SVhuMno0bGpHRWFONTNocytLXC9oVjBteEdQUVU4TDAxYTJ0UlF3OTlyblNhTnlnODYrek5tZDN5R21mSWc2azMrRCtxOE9weFdSUGRmeUdUcHE3aWpsWFRaUnByVVNVVHBnaGxVQT09In0%3D`
