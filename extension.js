@@ -1,6 +1,5 @@
 // @ts-nocheck
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
+
 const vscode = require('vscode');
 // const _ = require('lodash');
 
@@ -16,18 +15,84 @@ function activate(context) {
 	// This line of code will only be executed once when your extension is activated
 	// console.log('Congratulations, your extension "linkify" is now active!');
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('extension.linkify', function () {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		// vscode.window.showInformationMessage('Hello World from Linkify!');
 
 		// vscode.workspace.textDocuments.forEach(function(item, index) {
 		// 	console.log('item: '+JSON.stringify(item)+", index: "+index);
 		// })
+		let toRemoveStrings = [
+
+			// n.b. forward slashes are required for regex
+			"[\[|\]]", // remove square brackets
+			"\(\d+\) ,", // take out e.g. `(21) ` from YouTube etc
+
+			// remove site title
+			" - Google Search ",
+			" - Stack Overflow ",
+			" - YouTube ",
+			" - JIRA ",
+			" - Confluence ",
+			" - Jira ",
+			" - Quora",
+			"GitHub - ",
+			" - Ask Different",
+			" - Android Enthusiasts Stack Exchange",
+			" - Wikipedia ",
+			" - chrisjbird@gmail.com - Gmail ",
+			
+			// Google
+			// TODO should check this is a Google query at this point, in case it messes up other URLs
+			"oq=.*?\&",
+			"rlz=.*?\&",
+			"sxsrf=.*?\&",
+			"ei=.*?\&",
+			"ved=.*?\&",
+			"gs_l=.*?\&",
+			"gs_lcp=.*?\&",
+			"gs_ssp=.*?\&",
+			"uact=.*?\&",
+			"aqs=.*?\&",
+			"sourceid=.*?\&",
+			"biw=.*?\&",
+			"bih=.*?\&",
+			"ei=.*?\&",
+			"=.*?\&",
+			// "ie=.*?[\&\)]" // takes off trailing `)`
+			"ie=.*?\&",
+			"sa=.*?\&",
+			"stick=.*?\&",
+			"sclient=.*?\&",
+			"qsclient=.*?\&",
+
+			// ebay
+			"_trkparms=.*?\&",
+			"_trksid=.*?\&",
+			 
+
+
+			// UTM
+			"utm_campaign=.*?\&",
+			"utm_medium=.*?\&",
+			"utm_source=.*?\&",
+			"hsCtaTracking=.*?\&",
+
+// 			aws stuff:
+// ```
+// sc_icampaign
+// sc_ichannel
+// sc_ioutcome
+// sc_icontent
+// sc_iplace
+// trkCampaign
+// trk
+// whats-new-cards.sort-by
+// whats-new-cards.sort-order
+// mkt_tok
+// ```
+
+
+		];
 
 		const editor = vscode.window.activeTextEditor; 
 		var selection = editor.selection; 
@@ -38,51 +103,56 @@ function activate(context) {
 		let newlines = [];
 		lines.forEach(function(line) {
 			// @ts-ignore
-			console.log('orig: ' + line);
+			console.log('orig line: ' + line);
 			let linkStart = line.indexOf('(http');
 			if (-1 != linkStart) {
 				let nl = line;
 				
+				toRemoveStrings.forEach(replaceString => {
+					console.log(`Trying replaceString: ${replaceString}`);
+					// nl = nl.replace(/replaceString/, ''); //  This type of regex cannot be created dynamically.
+					nl = nl.replace(new RegExp(replaceString, 'g'), ''); // 
+				});
 				// TODO factor these into func
-				nl = nl.replace(/[\[|\]]/g, ''); // remove square brackets
+				// nl = nl.replace(/[\[|\]]/g, ''); // remove square brackets
 
-				// remove site title
-				nl = nl.replace(/ - Google Search /g, '');
-				nl = nl.replace(/ - Stack Overflow /g, '');
-				nl = nl.replace(/ - YouTube /g, '');
-				nl = nl.replace(/ - JIRA /g, '');
-				nl = nl.replace(/ - Quora/g, '');
-				nl = nl.replace(/GitHub - /g, '');
-				nl = nl.replace(/ - Ask Different/g, '');
-				nl = nl.replace(/ - Android Enthusiasts Stack Exchange/g, '');
+				// // remove site title
+				// nl = nl.replace(/ - Google Search /g, '');
+				// nl = nl.replace(/ - Stack Overflow /g, '');
+				// nl = nl.replace(/ - YouTube /g, '');
+				// nl = nl.replace(/ - JIRA /g, '');
+				// nl = nl.replace(/ - Quora/g, '');
+				// nl = nl.replace(/GitHub - /g, '');
+				// nl = nl.replace(/ - Ask Different/g, '');
+				// nl = nl.replace(/ - Android Enthusiasts Stack Exchange/g, '');
 
-				// take out e.g. `(21) ` from YouTube etc
-				// nl = nl.replace(/\([0-9]+\)/g, '');
-				nl = nl.replace(/\(\d+\) /g, ''); 
+				// // take out e.g. `(21) ` from YouTube etc
+				// // nl = nl.replace(/\([0-9]+\)/g, '');
+				// nl = nl.replace(/\(\d+\) /g, ''); 
 
-				// Google
-				// TODO should check this is a Google query at this point, in case it messes up other URLs
-				nl = nl.replace(/oq=.*?\&/g, '');
-				nl = nl.replace(/rlz=.*?\&/g, '');
-				nl = nl.replace(/sxsrf=.*?\&/g, '');
-				nl = nl.replace(/ei=.*?\&/g, '');
-				nl = nl.replace(/ved=.*?\&/g, '');
-				nl = nl.replace(/gs_l=.*?\&/g, '');
-				nl = nl.replace(/gs_lcp=.*?\&/g, '');
-				nl = nl.replace(/uact=.*?\&/g, '');
-				nl = nl.replace(/aqs=.*?\&/g, '');
-				nl = nl.replace(/sourceid=.*?\&/g, '');
-				// nl = nl.replace(/ie=.*?[\&\)]/g, ''); // takes off trailing `)`
-				nl = nl.replace(/ie=.*?\&/g, '');
-				nl = nl.replace(/sa=.*?\&/g, '');
-				nl = nl.replace(/stick=.*?\&/g, '');
-				nl = nl.replace(/sclient=.*?\&/g, '');
+				// // Google
+				// // TODO should check this is a Google query at this point, in case it messes up other URLs
+				// nl = nl.replace(/oq=.*?\&/g, '');
+				// nl = nl.replace(/rlz=.*?\&/g, '');
+				// nl = nl.replace(/sxsrf=.*?\&/g, '');
+				// nl = nl.replace(/ei=.*?\&/g, '');
+				// nl = nl.replace(/ved=.*?\&/g, '');
+				// nl = nl.replace(/gs_l=.*?\&/g, '');
+				// nl = nl.replace(/gs_lcp=.*?\&/g, '');
+				// nl = nl.replace(/uact=.*?\&/g, '');
+				// nl = nl.replace(/aqs=.*?\&/g, '');
+				// nl = nl.replace(/sourceid=.*?\&/g, '');
+				// // nl = nl.replace(/ie=.*?[\&\)]/g, ''); // takes off trailing `)`
+				// nl = nl.replace(/ie=.*?\&/g, '');
+				// nl = nl.replace(/sa=.*?\&/g, '');
+				// nl = nl.replace(/stick=.*?\&/g, '');
+				// nl = nl.replace(/sclient=.*?\&/g, '');
 
-				// UTM
-				nl = nl.replace(/utm_campaign=.*?\&/g, '');
-				nl = nl.replace(/utm_medium=.*?\&/g, '');
-				nl = nl.replace(/utm_source=.*?\&/g, '');
-				nl = nl.replace(/hsCtaTracking=.*?\&/g, '');
+				// // UTM
+				// nl = nl.replace(/utm_campaign=.*?\&/g, '');
+				// nl = nl.replace(/utm_medium=.*?\&/g, '');
+				// nl = nl.replace(/utm_source=.*?\&/g, '');
+				// nl = nl.replace(/hsCtaTracking=.*?\&/g, '');
 				// TODO doesn't get last one as it doesn't end with `&`
 				// TODO more elegant would be remove all params that are not `q`...
 				// TODO   if it has `https://www.google.com/search?`:
