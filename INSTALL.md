@@ -5,8 +5,7 @@
 ```bash
 npm i -g vsce
 ```
-`code` - VS Code command line tool
-should be installed as part of VS Code?
+`code` VS Code command line tool should be installed as part of VS Code
 [Command line - vscode ](https://vscode.readthedocs.io/en/latest/editor/command-line/)
 
 ## Create `.vsix`

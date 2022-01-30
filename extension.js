@@ -24,8 +24,8 @@ function activate(context) {
 		let toRemoveStrings = [
 
 			// n.b. forward slashes are required for regex
-			"[\[|\]]", // remove square brackets
-			"\(\d+\) ,", // take out e.g. `(21) ` from YouTube etc
+			"[\\[|\\]]", // remove square brackets
+			"\\(\\d+\\) ", // take out e.g. `(21) ` from YouTube etc
 
 			// remove site title
 			" - Google Search ",
@@ -43,41 +43,41 @@ function activate(context) {
 			
 			// Google
 			// TODO should check this is a Google query at this point, in case it messes up other URLs
-			"oq=.*?\&",
-			"rlz=.*?\&",
-			"sxsrf=.*?\&",
-			"ei=.*?\&",
-			"ved=.*?\&",
-			"gs_l=.*?\&",
-			"gs_lcp=.*?\&",
-			"gs_ssp=.*?\&",
-			"uact=.*?\&",
-			"aqs=.*?\&",
-			"sourceid=.*?\&",
-			"biw=.*?\&",
-			"bih=.*?\&",
-			"ei=.*?\&",
-			"=.*?\&",
-			// "ie=.*?[\&\)]" // takes off trailing `)`
-			"ie=.*?\&",
-			"sa=.*?\&",
-			"stick=.*?\&",
-			"sclient=.*?\&",
-			"qsclient=.*?\&",
+			"oq=.*?\\&",
+			"rlz=.*?\\&",
+			"sxsrf=.*?\\&",
+			"ei=.*?\\&",
+			"ved=.*?\\&",
+			"gs_l=.*?\\&",
+			"gs_lcp=.*?\\&",
+			"gs_ssp=.*?\\&",
+			"uact=.*?\\&",
+			"aqs=.*?\\&",
+			"sourceid=.*?\\&",
+			"biw=.*?\\&",
+			"bih=.*?\\&",
+			"ei=.*?\\&",
+			"=.*?\\&",
+			// "ie=.*?[\\&\)]" // takes off trailing `)`
+			"ie=.*?\\&",
+			"sa=.*?\\&",
+			"stick=.*?\\&",
+			"sclient=.*?\\&",
+			"qsclient=.*?\\&",
 
 			// ebay
-			"_trkparms=.*?\&",
-			"_trksid=.*?\&",
+			"_trkparms=.*?\\&",
+			"_trksid=.*?\\&",
 			 
 
 
 			// UTM
-			"utm_campaign=.*?\&",
-			"utm_medium=.*?\&",
-			"utm_source=.*?\&",
-			"hsCtaTracking=.*?\&",
+			"utm_source=.*?\\&",
+			"utm_medium=.*?\\&",
+			"utm_campaign=.*?\\&",
+			"hsCtaTracking=.*?\\&",
 
-// 			aws stuff:
+// aws:
 // ```
 // sc_icampaign
 // sc_ichannel
@@ -108,11 +108,18 @@ function activate(context) {
 			if (-1 != linkStart) {
 				let nl = line;
 				
-				toRemoveStrings.forEach(replaceString => {
+				// toRemoveStrings.forEach(replaceString => {
+				// 	console.log(`Trying replaceString: ${replaceString}`);
+				// 	// nl = nl.replace(/replaceString/, ''); //  regex literal cannot be created dynamically.
+				// 	nl = nl.replace(new RegExp(replaceString, 'g'), ''); // 
+				// });
+
+				for (const replaceString of toRemoveStrings) {
 					console.log(`Trying replaceString: ${replaceString}`);
-					// nl = nl.replace(/replaceString/, ''); //  This type of regex cannot be created dynamically.
+					// nl = nl.replace(/replaceString/, ''); //  regex literal cannot be created dynamically.
 					nl = nl.replace(new RegExp(replaceString, 'g'), ''); // 
-				});
+				};
+
 				// TODO factor these into func
 				// nl = nl.replace(/[\[|\]]/g, ''); // remove square brackets
 
@@ -152,6 +159,7 @@ function activate(context) {
 				// nl = nl.replace(/utm_campaign=.*?\&/g, '');
 				// nl = nl.replace(/utm_medium=.*?\&/g, '');
 				// nl = nl.replace(/utm_source=.*?\&/g, '');
+				//                 /utm_source=.*?&/g
 				// nl = nl.replace(/hsCtaTracking=.*?\&/g, '');
 				// TODO doesn't get last one as it doesn't end with `&`
 				// TODO more elegant would be remove all params that are not `q`...
