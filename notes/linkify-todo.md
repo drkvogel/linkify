@@ -4,6 +4,18 @@
 when pasting candidates here, paste whole url including `https://`, so can copy paste this into test area and run prog on them - won't work without whole url!
 
 
+2022-02-05 07:35 Sat / 13:05 IST / 14:35 ICT
+linkify borked. This converts OK:
+```
+Woah - Trippy Visuals – Apps on Google Play (https://play.google.com/store/apps/details?id=app.woah)
+```
+but this, with an extra parameter, doesn't:
+```
+Mesmerize - Visual Meditation - Apps on Google Play (https://play.google.com/store/apps/details?id=app.mesmerize&hl=en)
+```
+this is why you should have automated tests!!
+
+
 linkify doesn't remove `Window` on Windows/WSL if file has `CRLF` line endings
 
 `?xtor=CS8-1000-%5BIn_Article_Promo_Box%5D-%5BNews_Promo_In_Article%5D-%5BNews_Promo_In_Article_BBCGeneric%5D-%5BPS_PROGRAMMES~N~~laptopfatigue_bbscotland_0110_news%5D`
