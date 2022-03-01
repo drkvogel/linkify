@@ -262,9 +262,6 @@ foreach line that has `(http` in it:
 bound `linkify` command to `shift+cmd+i`
 
 remove ` - Jira `
-[Publishing Extension  Visual Studio Code Extension API ](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions)
-https://code.visualstudio.com/api/references/vscode-api#SelectionRange
-auto-linkify on paste into vscode?
 
 `gs_l` is often the longest param in google search, e.g.:
 ottoman bed single (https://www.google.com/search?q=ottoman+bed+single&gs_l=psy-ab.1.0.0l7j0i22i30l3.22974.23693..24912...0.2..1.288.1557.0j2j5......0....1..gws-wiz.......0i71j0i67j0i20i263.QH3zCEXSoro)
