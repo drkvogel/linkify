@@ -2,50 +2,26 @@
 
 [drkvogel/linkify](https://github.com/drkvogel/linkify)
 
-### Manual Testing
-
-In VSCode, do Run -> Start Debugging, or press `f5`
-Program will run in new window
-Create a editor, paste some text, select, and run extn either with defined shortcut (e.g. `shift+alt+i`) or from command palette (`ctrl+shift+p`, `Linkify`)
-`ctrl+shift+f5` to restart debugging
-
-### package
-
-```
-2022-01-22 00:59:16 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗ 
-❯ which vsce 
-vsce not found
-❯ npm i -g vsce
-...
-Reshimming asdf nodejs...
-❯ vsce package
- INFO  Detected presence of yarn.lock. Using 'yarn' instead of 'npm' (to override this pass '--no-yarn' on the command line).
- ERROR  Command failed: yarn list --prod --json
-/bin/sh: 1: yarn: not found
-❯ which yarn
-yarn not found
-❯ npm i -g yarn
-...
-Reshimming asdf nodejs...
-❯ vsce package 
-```
-
-### Install
-
-```
-2022-01-22 04:46:31 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗ 
-❯ code --install-extension linkify-0.1.2.vsix 
-Installing extensions...
-(node:37129) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `code --trace-deprecation ...` to show where the warning was created)
-Extension 'linkify-0.1.2.vsix' was successfully installed.
-```
-## ToDo
-
 notes/borked.md
 
+
+[Testing](/notes/testing.md) the extension
+
+How to [Install](/notes/install.md) the extension
+
+[VS Code API  Visual Studio Code Extension API ](https://code.visualstudio.com/api/references/vscode-api)
+[VS Code API  Visual Studio Code Extension API ](https://code.visualstudio.com/api/references/vscode-api#TextEditor)
+
+[Command line - vscode ](https://vscode.readthedocs.io/en/latest/editor/command-line/)
+
+
+
+
+## ToDo
+
+
 ```
-2022-01-22 04:56:10 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗ 
+2022-01-22 04:56:10 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
 ❯ node
 Welcome to Node.js v17.3.0.
 ```
@@ -72,7 +48,6 @@ nl = nl.replace(/utm_source=.*?\&/g, '');
 notice escaped `&`
 yes, have to escape the backslashes in the strings that get passed to the regex
 
-
 should split code into sections dealing with title text and link text
 
 doesn't take off last query string argument (because doesn't end with `&` - shouldn't include `&` in `toRemoveStrings` anyway)
@@ -91,11 +66,8 @@ linkify: `notes/211028-cn-issues.md` -> `[cn issues](/notes/211028-cn-issues.md)
 
 auto-linkify on paste into vscode?
 
-tabs copied from TabOutliner into markdown links- linkify
-  strip non-essential query string params from Google search
+strip non-essential query string params from Google search
 
-linkify
-  auto-linkify on paste into vscode?
 linkify:
   last param
   new google params - bwi?
@@ -109,7 +81,6 @@ notes/slack messages.md
 projects/repos/linkify/notes/use-cases/msteams.md
 
 diigo: [#productivity - chrisjbird @ Diigo](https://www.diigo.com/user/chrisjbird?query=%23productivity)
-
 
 original pseudocode?:
 foreach line that has `(http` in it:
@@ -137,20 +108,3 @@ but what does it do?
 
 ## done
 
-### Install extension from package
-```
-19/04/23 12:18:18 cjb-tp-macbook:~/Projects/linkify ±(master) 
-❯ code --install-extension linkify-0.0.1.vsix
-Extension 'linkify-0.0.1.vsix' was successfully installed!
-```
-May not work on  work on Windows/WSL:
-```
-cbird@CHRISBIRD10:/mnt/c/Users/birdc/Projects/linkify$ code --install-extension linkify-0.0.1.vsix 
-Installing VS Code Server b37e54c98e1a74ba89e03073e5a3761284e3ffb0
-Downloading: 100%
-Unpacking: 100%
-Ignoring option install-extension: not supported for code
-```
-Installed `.vsix` from Code menu instead.
-
-`sudo npm i -g vsce`

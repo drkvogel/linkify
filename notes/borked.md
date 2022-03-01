@@ -2,6 +2,19 @@
 `linkify-0.1.2.vsix` from commit `df13ea06f86f3329ac6dba563792c94209c74272` Date:   Sun Jan 30 03:57:25 2022 +0000
 doesn't work properly, screws up e.g.:
 
+
+2022-02-05 07:35 Sat / 13:05 IST / 14:35 ICT
+linkify borked. This converts OK:
+```
+Woah - Trippy Visuals – Apps on Google Play (https://play.google.com/store/apps/details?id=app.woah)
+```
+but this, with an extra parameter, doesn't:
+```
+Mesmerize - Visual Meditation - Apps on Google Play (https://play.google.com/store/apps/details?id=app.mesmerize&hl=en)
+```
+this is why you should have automated tests!!
+
+
 ```
 Window
     Wooden Ships Band - Google Search (https://www.google.com/search?sxsrf=APq-WBsTB0VSxmRlP7s9wrYAbj7-q8eYzg:1643797022284&q=Wooden+Ships+Band&sa=X&ved=2ahUKEwjk1eGM5eD1AhX1zjgGHV8bDRcQ1QJ6BAgzEAE&biw=1606&bih=926&dpr=1.41)

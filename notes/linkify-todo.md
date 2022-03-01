@@ -3,19 +3,6 @@
 
 when pasting candidates here, paste whole url including `https://`, so can copy paste this into test area and run prog on them - won't work without whole url!
 
-
-2022-02-05 07:35 Sat / 13:05 IST / 14:35 ICT
-linkify borked. This converts OK:
-```
-Woah - Trippy Visuals – Apps on Google Play (https://play.google.com/store/apps/details?id=app.woah)
-```
-but this, with an extra parameter, doesn't:
-```
-Mesmerize - Visual Meditation - Apps on Google Play (https://play.google.com/store/apps/details?id=app.mesmerize&hl=en)
-```
-this is why you should have automated tests!!
-
-
 linkify doesn't remove `Window` on Windows/WSL if file has `CRLF` line endings
 
 `?xtor=CS8-1000-%5BIn_Article_Promo_Box%5D-%5BNews_Promo_In_Article%5D-%5BNews_Promo_In_Article_BBCGeneric%5D-%5BPS_PROGRAMMES~N~~laptopfatigue_bbscotland_0110_news%5D`
@@ -148,10 +135,10 @@ or, remove all after slash by default?
 `\?_encoding.*` ?
 
 ```
- - Super User 
- - MacRumors 
- | MacRumors Forums 
-: Amazon.co.uk: Musical Instruments 
+ - Super User
+ - MacRumors
+ | MacRumors Forums
+: Amazon.co.uk: Musical Instruments
 ```
 
 ```
@@ -203,7 +190,7 @@ wtf? `#q=~(infinite~true~filters~(postType~(~'page~'post~'aa_book~'aa_event_sess
 
 `utm_term=exit_overlay&utm_content=most_targeted_restore_energy`
 
-plex: 
+plex:
 in "on Plex" movies e.g.
 [Cropsey ](https://app.plex.tv/desktop/#!/provider/tv.plex.provider.vod/details?key=%2Flibrary%2Fmetadata%2F5e3c1697c9eff00040e90799)
 
@@ -217,7 +204,7 @@ new google params?
 
 
 `&context=hub.search.movie`
-`&context=home%3Ahub.movies.recommended~2~2` where 
+`&context=home%3Ahub.movies.recommended~2~2` where
 ```re
 recommended~\d+~\d+
 ```
@@ -259,7 +246,7 @@ kvogel@kvogel-elitebook:~/Projects/linkify$ sudo npm i -g vsce
 where is `.vsix`? gdrive? is now
 
 ```
-kvogel@kvogel-elitebook:~/Projects/linkify$ code --install-extension linkify-0.0.1.vsix 
+kvogel@kvogel-elitebook:~/Projects/linkify$ code --install-extension linkify-0.0.1.vsix
 Installing extensions... Extension 'linkify-0.0.1.vsix' was successfully installed.
 ```
 
@@ -303,7 +290,7 @@ linkify `&gs_lcp=Cgdnd3Mtd2l6EAMYADIICCEQFhAdEB4yCAghEBYQHRAeOgcIABBHELADOgcIABC
 
 
 
-linkify: 
+linkify:
 `?utm_term=new-cust&utm_content=text&autoplay=1&&sc_src=email_8932957&sc_lid=428079554&sc_uid=znIbA0vu9r&sc_llid=167362&sc_eh=69c870f886c1693f1`
 linkify: `?cid=gb:semsegoogleg-uk-shopping-pla-brand-commercial-laptops-TFSM1Q12YF946467503994327825097pla-876588939096shoppingshopping&gclsrc=aw.ds&&gclid=CjwKCAjw6fCCBhBNEiwAem5SOyMgH1B3LbdxSQip043-sxYAQo-a9_CjWzAZNd24eWrxHoAxrctsABoCkrkQAvD_BwE`
 linkify: ` — Bitbucket `
@@ -315,7 +302,7 @@ actually ` - Wikipedia ` (my trailing space not theirs - get rid)
 
 `?trk=em_a134p000006vkbCAAQ&trkCampaign=AWS_OTT_April_2021_MultiReg&sc_channel=em&sc_campaign=%7B%7Bprogram.name%7D%7D&sc_medium=em_%7B%7Bcampaign.id%7D%7D&sc_outcome=Product_Adoption_Campaigns&sc_geo=NAMER&sc_country=mult&sc_content=AWS_Webpage&webinar=2021_0404-BAP&category=BAP` amazon/aws
 
-`#:~:text=SATA%20uses%20simple%20cables%20that,and%20you're%20halfway%20there.&text=Some%20SATA%20data%20cables%20come,can%20help%20keep%20cables%20tidy.` google text snippets? 
+`#:~:text=SATA%20uses%20simple%20cables%20that,and%20you're%20halfway%20there.&text=Some%20SATA%20data%20cables%20come,can%20help%20keep%20cables%20tidy.` google text snippets?
 break markdown link sometimes, e.g.: `#:~:text=An%20ISRC%20code%20(International%20Standard,'life'%20of%20their%20recording.`
 
 [Newton’s secret law of money ](https://pro.southbankresearch.com/p/FTI-1220-MR/EFTIX626/?customerNumber=000130056823&campaignId=4d178bc7-4f8d-4927-8d3d-8249e149ee4c&r=eml&experimentId=51a5eb8b-0746-7bea-63bb-746a05a0e4c2&vid=kOT4HN&customerId=000130056823-000130690868&utm_content=faf-030621-endo-fti-eng-non-buy&bsft_clkid=7d025eda-c173-48a8-a748-1d5b27c23165&bsft_uid=c2eaaeb7-3f22-4ab7-b090-3272b9133b2b&bsft_mid=c2f7ad22-8fad-4edb-9661-84b328eb6c5d&bsft_eid=51a5eb8b-0746-7bea-63bb-746a05a0e4c2&bsft_utid=c2eaaeb7-3f22-4ab7-b090-3272b9133b2b-SB_FAF&bsft_mime_type=html&bsft_ek=2021-06-03T19%3A01%3A26Z&bsft_aaid=b80f057b-39db-472e-a08e-240b3587adc9&bsft_lx=1&bsft_tv=2&h=true)
