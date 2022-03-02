@@ -95,23 +95,14 @@ npm WARN deprecated vscode@1.1.33: This package is deprecated in favor of @types
 Detected VS Code engine version: ^1.32.0
 Error installing vscode.d.ts: Error: Request returned status code: 404
 Details: <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Error</title>
-</head>
-<body>
+...
 <pre>Cannot GET /api/releases/stable</pre>
-</body>
-</html>
 
 npm ERR! code 1
 npm ERR! path /home/kvogel/projects/general/projects/repos/linkify
 npm ERR! command failed
 npm ERR! command sh -c node ./node_modules/vscode/bin/install
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/kvogel/.npm/_logs/2022-03-01T21_49_32_154Z-debug-0.log
+npm ERR! A complete log of this run can be found in: /home/kvogel/.npm/_logs/2022-03-01T21_49_32_154Z-debug-0.log
 
 ❯ vsce --version
 2.6.3
@@ -147,7 +138,6 @@ updated `package.json`:
 		"vscode": "^1.64.2"
 	},
 ```
-
 Now:
 ```
 2022-03-01 22:01:17 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
@@ -219,9 +209,31 @@ Tests exited with code: 0
 ```
 so it does run the tests now, but not while vscode is running - which is a PITA
 
+Added answer to [visual studio code - vscode.d.ts could not be installed](https://stackoverflow.com/questions/54706293/vscode-d-ts-could-not-be-installed/71316203#71316203)
+
+
 Error: Running extension tests from the command line is currently only supported if no other instance of Code is running. - Google Search (https://www.google.com/search?q=Error%3A+Running+extension+tests+from+the+command+line+is+currently+only+supported+if+no+other+instance+of+Code+is+running.&oq=Error%3A+Running+extension+tests+from+the+command+line+is+currently+only+supported+if+no+other+instance+of+Code+is+running.&aqs=chrome..69i57j69i58.1215j0j7&sourceid=chrome&ie=UTF-8)
+
 [Testing Extensions | Visual Studio Code Extension API ](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
+>Tips#
+>Using Insiders version for extension development#
+>Because of VS Code's limitation, if you are using VS Code stable release and try to run the integration test on CLI, it will throw an error:
+>Running extension tests from the command line is currently only supported if no other instance of Code is running. In general if you run extension tests from CLI, the version the tests run with cannot be running already. As a workaround, you can run the tests in VS Code Stable and *use VS Code Insiders for development*.
+or vice versa? run the tests in VS Code Insiders and develop in VSCode Stable?
+
+[Download Visual Studio Code Insiders ](https://code.visualstudio.com/insiders/)
+
+```
+2022-03-02 00:42:25 kvogel@kvogel-surface-ubuntu:~/Downloads
+❯ sudo dpkg -i code-insiders_1.65.0-1646060513_amd64.deb
+...
+Error in file "/usr/share/applications/org.kde.kdeconnect_open.desktop": "*/*" is an invalid MIME type ("*" is an unregistered media type)
+...
+```
+Now got fonkeh green "Visual Studio Code - Insiders" shortcut...
+
 [Make it possible to run extension tests while VS Code is running · Issue #57 · microsoft/vscode-test ](https://github.com/microsoft/vscode-test/issues/57)
 [Can run tests even when VS Code is running if `--user-data-dir` is specified or, the version is different. · Issue #58 · microsoft/vscode-test ](https://github.com/microsoft/vscode-test/issues/58)
 [https://raw.githubusercontent.com/microsoft/vscode-docs/vnext/api/working-with-extensions/testing-extension.md ](https://raw.githubusercontent.com/microsoft/vscode-docs/vnext/api/working-with-extensions/testing-extension.md)
 [Unable to run extension test from command line when vscode-insider is open · Issue #112793 · microsoft/vscode ](https://github.com/microsoft/vscode/issues/112793)
+
