@@ -60,20 +60,57 @@ suite("Extension Tests", function() {
 
 >open the Debug tab in VS Code and choose the “Extension Tests” launch configuration. This will open an instance of VS Code with your extension installed and then run any test suite.
 
-testing vscode extensions with mocha - Google Search (https://www.google.com/search?q=testing+vscode+extensions+with+mocha&oq=testing+vscode+extensions+with+mocha&aqs=chrome..69i57.6978j0j7&sourceid=chrome&ie=UTF-8)
+[testing vscode extensions with mocha](https://www.google.com/search?q=testing+vscode+extensions+with+mocha&oq=testing+vscode+extensions+with+mocha&aqs=chrome..69i57.6978j0j7&sourceid=chrome&ie=UTF-8)
 [Testing Extensions | Visual Studio Code Extension API ](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
->Visual Studio Code supports running and debugging tests for your extension. These tests will run inside a special instance of VS Code named the Extension Development Host, and have full access to the VS Code API. We refer to these tests as integration tests, because they go beyond unit tests that can run without a VS Code instance.
+>Visual Studio Code supports running and debugging tests for your extension. These tests will run inside a *special instance of VS Code* named the *Extension Development Host*, and have full access to the VS Code API. We refer to these tests as integration tests, because they go beyond unit tests that can run without a VS Code instance.
 
 >In the generated extension, you can use `npm run test` or `yarn test` to run the integration tests that:
+>Downloads and unzips latest version of VS Code.
+>Runs the Mocha tests specified by the extension test runner script.
 
-Downloads and unzips latest version of VS Code.
-Runs the Mocha tests specified by the extension test runner script.
-
-[Testing your VS Code extensions | VS Code Rocks ](https://vscode.rocks/testing/)
-[Testing Inside VS Code with Mocha](https://www.youtube.com/watch?v=QsupPG1RGVQ)
+[Testing Inside VS Code with Mocha](https:/e/www.youtube.com/watch?v=QsupPG1RGVQ)
 [javascript - Run vscode extension unit test](https://stackoverflow.com/questions/60966215/run-vscode-extension-unit-test)
 
 
+
+Added answer to [visual studio code - vscode.d.ts could not be installed](https://stackoverflow.com/questions/54706293/vscode-d-ts-could-not-be-installed/71316203#71316203)
+
+
+Error: Running extension tests from the command line is currently only supported if no other instance of Code is running. - Google Search (https://www.google.com/search?q=Error%3A+Running+extension+tests+from+the+command+line+is+currently+only+supported+if+no+other+instance+of+Code+is+running.&oq=Error%3A+Running+extension+tests+from+the+command+line+is+currently+only+supported+if+no+other+instance+of+Code+is+running.&aqs=chrome..69i57j69i58.1215j0j7&sourceid=chrome&ie=UTF-8)
+
+[Testing Extensions | Visual Studio Code Extension API ](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
+>Tips#
+>Using Insiders version for extension development#
+>Because of VS Code's limitation, if you are using VS Code stable release and try to run the integration test on CLI, it will throw an error:
+>Running extension tests from the command line is currently only supported if no other instance of Code is running. In general if you run extension tests from CLI, the version the tests run with cannot be running already. As a workaround, you can run the tests in VS Code Stable and *use VS Code Insiders for development*.
+or vice versa? run the tests in VS Code Insiders and develop in VSCode Stable?
+
+visual studio code - vscode.d.ts could not be installed - Stack Overflow (https://stackoverflow.com/questions/54706293/vscode-d-ts-could-not-be-installed/71316203#71316203)
+    Unable to run extension test from command line when vscode-insider is open · Issue #112793 · microsoft/vscode (https://github.com/microsoft/vscode/issues/112793)
+    Testing Extensions | Visual Studio Code Extension API (https://code.visualstudio.com/api/working-with-extensions/testing-extension#disabling-other-extensions-while-debugging)
+
+
+[Make it possible to run extension tests while VS Code is running · Issue #57 · microsoft/vscode-test ](https://github.com/microsoft/vscode-test/issues/57)
+[Can run tests even when VS Code is running if `--user-data-dir` is specified or, the version is different. · Issue #58 · microsoft/vscode-test ](https://github.com/microsoft/vscode-test/issues/58)
+[https://raw.githubusercontent.com/microsoft/vscode-docs/vnext/api/working-with-extensions/testing-extension.md ](https://raw.githubusercontent.com/microsoft/vscode-docs/vnext/api/working-with-extensions/testing-extension.md)
+[Unable to run extension test from command line when vscode-insider is open · Issue #112793 · microsoft/vscode ](https://github.com/microsoft/vscode/issues/112793)
+
+
+[Testing Extensions | Visual Studio Code Extension API ](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
+[migrating from vscode](https://code.visualstudio.com/api/working-with-extensions/testing-extension#migrating-from-vscode) - means npm `vscode/lib/testrunner`? - old, so migrate to use instructions
+should be: `import { runTests } from '@vscode/test-electron';`
+ah, I got the tests to run from the cli with the old/current config, but not from GUI? Or only with Test Explorer UI?
+
+
+
+## done
+
+### Test Explorer UI
+
+[Test Explorer UI - Visual Studio Marketplace ](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer) - had installed but not enabled, now enabled in workspace. Can't figure out how to use... then spotted in docs:
+>In version 1.59, VS Code added an official API and UI for running tests, which provides all the functionality of this extension and more. Therefore this extension is now deprecated.
+
+### Error installing vscode.d.ts
 
 ```
 2022-03-01 21:49:24 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
@@ -81,13 +118,7 @@ Runs the Mocha tests specified by the extension test runner script.
 npm WARN old lockfile The package-lock.json file was created with an old version of npm, so supplemental metadata must be fetched from the registry.
 npm WARN old lockfile This is a one-time fix-up, please be patient...
 npm WARN deprecated uuid@3.3.2: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
-npm WARN deprecated request@2.88.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm WARN deprecated har-validator@5.1.3: this library is no longer supported
-npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
-npm WARN deprecated vscode-test@0.1.5: This package has been renamed to @vscode/test-electron, please update to the new name
-npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm WARN deprecated vscode@1.1.33: This package is deprecated in favor of @types/vscode and vscode-test. For more information please read: https://code.visualstudio.com/updates/v1_36#_splitting-vscode-package-into-typesvscode-and-vscodetest
+...
 
 > linkify@0.1.2 postinstall
 > node ./node_modules/vscode/bin/install
@@ -209,31 +240,5 @@ Tests exited with code: 0
 ```
 so it does run the tests now, but not while vscode is running - which is a PITA
 
-Added answer to [visual studio code - vscode.d.ts could not be installed](https://stackoverflow.com/questions/54706293/vscode-d-ts-could-not-be-installed/71316203#71316203)
-
-
-Error: Running extension tests from the command line is currently only supported if no other instance of Code is running. - Google Search (https://www.google.com/search?q=Error%3A+Running+extension+tests+from+the+command+line+is+currently+only+supported+if+no+other+instance+of+Code+is+running.&oq=Error%3A+Running+extension+tests+from+the+command+line+is+currently+only+supported+if+no+other+instance+of+Code+is+running.&aqs=chrome..69i57j69i58.1215j0j7&sourceid=chrome&ie=UTF-8)
-
-[Testing Extensions | Visual Studio Code Extension API ](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
->Tips#
->Using Insiders version for extension development#
->Because of VS Code's limitation, if you are using VS Code stable release and try to run the integration test on CLI, it will throw an error:
->Running extension tests from the command line is currently only supported if no other instance of Code is running. In general if you run extension tests from CLI, the version the tests run with cannot be running already. As a workaround, you can run the tests in VS Code Stable and *use VS Code Insiders for development*.
-or vice versa? run the tests in VS Code Insiders and develop in VSCode Stable?
-
-[Download Visual Studio Code Insiders ](https://code.visualstudio.com/insiders/)
-
-```
-2022-03-02 00:42:25 kvogel@kvogel-surface-ubuntu:~/Downloads
-❯ sudo dpkg -i code-insiders_1.65.0-1646060513_amd64.deb
-...
-Error in file "/usr/share/applications/org.kde.kdeconnect_open.desktop": "*/*" is an invalid MIME type ("*" is an unregistered media type)
-...
-```
-Now got fonkeh green "Visual Studio Code - Insiders" shortcut...
-
-[Make it possible to run extension tests while VS Code is running · Issue #57 · microsoft/vscode-test ](https://github.com/microsoft/vscode-test/issues/57)
-[Can run tests even when VS Code is running if `--user-data-dir` is specified or, the version is different. · Issue #58 · microsoft/vscode-test ](https://github.com/microsoft/vscode-test/issues/58)
-[https://raw.githubusercontent.com/microsoft/vscode-docs/vnext/api/working-with-extensions/testing-extension.md ](https://raw.githubusercontent.com/microsoft/vscode-docs/vnext/api/working-with-extensions/testing-extension.md)
-[Unable to run extension test from command line when vscode-insider is open · Issue #112793 · microsoft/vscode ](https://github.com/microsoft/vscode/issues/112793)
+Installed [VS Code Insiders](file:///home/kvogel/projects/general/dev/machines/surface/surface-linux-setup-done.md)
 
