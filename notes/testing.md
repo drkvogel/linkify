@@ -101,6 +101,122 @@ visual studio code - vscode.d.ts could not be installed - Stack Overflow (https:
 should be: `import { runTests } from '@vscode/test-electron';`
 ah, I got the tests to run from the cli with the old/current config, but not from GUI? Or only with Test Explorer UI?
 
+```
+2022-03-06 13:06:52 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
+❯ npm install --save-dev @vscode/test-electron
+```
+
+```
+2022-03-06 13:26:48 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
+❯ npm install --save-dev @types/glob @types/mocha @types/node @types/vscode @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint glob mocha source-map-support typescript
+
+added 97 packages, removed 39 packages, changed 54 packages, and audited 206 packages in 35s
+
+38 packages are looking for funding
+  run `npm fund` for details
+
+2 moderate severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+```
+
+
+```
+2022-03-06 13:31:35 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
+❯ npm run test
+
+> linkify@0.1.3 pretest
+> npm run compile
+
+> linkify@0.1.3 compile
+> tsc -p ./
+
+> linkify@0.1.3 test
+> node ./out/test/runTest.js
+
+Downloading VS Code 1.65.0 from https://update.code.visualstudio.com/1.65.0/linux-x64/stable
+Downloading VS Code [=============================-] 100%Downloaded VS Code 1.65.0 into /home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0
+Downloading VS Code [==============================] 100%[298144:0306/133443.004419:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+[main 2022-03-06T13:34:43.457Z] window#load: attempt to load window (id: 1)
+[main 2022-03-06T13:34:43.535Z] update#ctor - updates are disabled by the environment
+[main 2022-03-06T13:34:43.791Z] ExtensionHostStarterWorker created
+[main 2022-03-06T13:34:48.353Z] window#load: window reported ready (id: 1)
+[main 2022-03-06T13:34:49.148Z] Starting extension host with pid 298594 (fork() took 50 ms).
+[main 2022-03-06T13:34:49.151Z] ExtensionHostStarterWorker.start() took 63 ms.
+Error: Cannot find module '/home/kvogel/projects/general/projects/repos/linkify/out/test/suite/index'
+Require stack:
+- /home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/vs/loader.js
+- /home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/bootstrap-amd.js
+- /home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/bootstrap-fork.js
+        at Function.Module._resolveFilename (internal/modules/cjs/loader.js:934:15)
+        at Module._load (internal/modules/cjs/loader.js:779:27)
+        at Function.f._load (electron/js2c/asar_bundle.js:5:12913)
+        at Function.n._load (/home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:32148)
+        at Function._._load (/home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:28737)
+        at Function.g._load (/home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:99:60372)
+        at Module.require (internal/modules/cjs/loader.js:1006:19)
+        at require (internal/modules/cjs/helpers.js:88:18)
+        at Function.r [as __$__nodeRequire] (/home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/vs/loader.js:5:101)
+        at d._loadCommonJSModule (/home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:30307)
+        at d._doHandleExtensionTests (/home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:90:18376)
+        at d.$extensionTestsExecute (/home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.65.0/VSCode-linux-x64/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:90:18119)
+[main 2022-03-06T13:34:54.881Z] Waiting for extension host with pid 298594 to exit.
+[main 2022-03-06T13:34:54.912Z] Extension host with pid 298594 exited with code: 1, signal: null.
+Exit code:   1
+Failed to run tests
+```
+
+Error: Cannot find module out/test/suite/index
+Require stack:
+resources/app/out/vs/loader.js
+resources/app/out/bootstrap-amd.js
+resources/app/out/bootstrap-fork.js
+(above files are present)
+
+[Visual Code extension cannot find module out/test/suite/index · Issue #79088 · microsoft/vscode ](https://github.com/microsoft/vscode/issues/79088)
+>vscodebot bot commented on 14 Aug 2019 This issue is caused by an extension
+bot has flagged it as to do with an extension...
+
+Tried to uninstall Test Explorer UI extn:
+>Cannot uninstall 'Test Explorer UI' extension. 'Rust Test Explorer' extension depends on this.
+
+added test runner script: https://github.com/microsoft/vscode-extension-samples/blob/main/helloworld-test-sample/src/test/suite/index.ts mentioned in [docs](https://code.visualstudio.com/api/working-with-extensions/testing-extension#overview) in `src/test/suite/` - OK
+
+then:
+```
+2022-03-06 13:49:31 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
+❯ npm run test
+...
+src/test/suite/index.ts:10:8 - error TS2339: Property 'useColors' does not exist on type 'Mocha'.
+10  mocha.useColors(true);
+          ~~~~~~~~~
+Found 1 error in src/test/suite/index.ts:10
+```
+
+in `https://github.com/microsoft/vscode-extension-samples/blob/main/helloworld-test-sample/src/test/suite/index.ts`:
+```js
+	const mocha = new Mocha({
+		ui: 'tdd',
+    color: true
+	});
+	// mocha.useColors(true);
+```
+now seems to work:
+```
+2022-03-06 13:54:27 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
+❯ npm run test
+...
+  0 passing (4ms)
+[main 2022-03-06T13:57:50.707Z] Waiting for extension host with pid 306476 to exit.
+disposed: Error: disposed
+...
+[main 2022-03-06T13:57:50.783Z] Extension host with pid 306476 exited with code: 0, signal: null.
+Exit code:   0
+Done
+```
 
 
 ## done
