@@ -14,7 +14,6 @@
 	"activationEvents": [
 		"onCommand:extension.linkify"
 	],
-	"xxmain": "./extension.js",
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
