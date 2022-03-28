@@ -4,18 +4,34 @@
 
 notes/borked.md
 
-
 [Testing](/notes/testing.md) the extension
 
-How to [Install](/notes/install.md) the extension
+[Install](/notes/install.md) the extension
 
 [VS Code API  Visual Studio Code Extension API ](https://code.visualstudio.com/api/references/vscode-api)
+>VS Code API is a set of JavaScript APIs that you can invoke in your Visual Studio Code extension. This page lists all VS Code APIs available to extension authors.
+
 [VS Code API  Visual Studio Code Extension API ](https://code.visualstudio.com/api/references/vscode-api#TextEditor)
 
-[Command line - vscode ](https://vscode.readthedocs.io/en/latest/editor/command-line/)
 
+Sat 2022-03-19 10:49 / 17:49 ICT
+basically we're:
+taking a line or lines of text
+matching patterns to identify and copy into memory a substring or the whole string - call them fragments? paragraphs? items - that we want to transform
+optionally dealing with substrings of each item - fragments?
+transforming the fragments
+join fragments
+output transformed item
+replace original item with transformed item
 
-
+items:
+links
+have two parts:
+  link text
+  link url
+emails
+slack messages
+teams messages
 
 ## ToDo
 

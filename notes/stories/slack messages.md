@@ -4,7 +4,7 @@
 John Flynn  3 days ago
 The debt figure below should not be zero as I have a figure for debt in the profile.  In the legacy app this figure appears correctly which suggests it is not a Brain issue.  However, having raised the issue directly with Preeo, they have responded that the legacy app uses a different version of the Brain.
 @chris.bird would you be able to confirm where the issue is likely to be?
-image.png 
+image.png
 image.png
 
 
@@ -35,7 +35,7 @@ Must have missed this. I will take a look at it this morning
 
 Jean Marc Dimech  1 hour ago
 Debt is being sent value 0
-image.png 
+image.png
 image.png
 
 
@@ -118,7 +118,7 @@ He is no longer under contract with us at this point
 
 ```
 You have new messages in ncg-digital (ncg-digital.slack.com)
-From #jira  
+From #jira
 
 Jira   August 19th at 12:31 PM
 Ruslan Gonzalez created a Story ND-85 Implement testing filebeat config on a commit
@@ -140,7 +140,7 @@ Jira   August 23rd at 10:54 AM
 ```
 to
 ```
-You have new messages in ncg-digital (ncg-digital.slack.com) From #jira  
+You have new messages in ncg-digital (ncg-digital.slack.com) From #jira
 Jira   August 19th at 12:31 PM Ruslan Gonzalez created a Story ND-85 Implement testing filebeat config on a commit
 Jira   August 23rd at 10:46 AM @Chris Neil created a Story ND-86 Deploy to Dev
 Jira   August 23rd at 10:46 AM @Chris Neil created a Story ND-87 Deploy to Stg
@@ -148,3 +148,18 @@ Jira   August 23rd at 10:46 AM @Chris Neil created a Story ND-88 Deploy to Prod
 Jira   August 23rd at 10:51 AM @Chris Neil created a Story ND-89 Document the deployment process
 Jira   August 23rd at 10:54 AM @Chris Neil created a Story ND-90 Update deployment docuement
 ```
+
+linkify: slack:
+```
+Steve Harrison  12:17 PM
+well in a nutshell, you need to move the payment reference to top of page, and then remove this whole section (with the buttons then moving on up)
+
+
+
+
+
+New
+12:18
+if you remember we looked at the references and they were just a list….so you will need to create a new property to just extract the payment reference
+```
+
