@@ -22,6 +22,6 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(disposable);
 }
 
-export function example_func() {
-  return "hello";
+export function ping() {
+  return "pong";
 }
