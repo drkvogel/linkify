@@ -33,6 +33,10 @@ emails
 slack messages
 teams messages
 
+for great suspender, will have to first transform into original title and url, then transform it as normal...
+
+identify type of link
+
 ## ToDo
 
 
@@ -82,7 +86,6 @@ linkify: `notes/211028-cn-issues.md` -> `[cn issues](/notes/211028-cn-issues.md)
 
 auto-linkify on paste into vscode?
 
-strip non-essential query string params from Google search
 
 linkify:
   last param
@@ -90,6 +93,7 @@ linkify:
   great sus
   release??
     "contribute to open source projects"?
+
 linkify jgrund re, publish
 
 notes/email-condense.md

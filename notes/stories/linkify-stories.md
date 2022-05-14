@@ -4,11 +4,66 @@ n.b. when pasting candidates here, paste whole url including `https://`, so can 
 `Window (crashed Mon Mar 21 2022)`
 
 `?xtor=CS8-1000-%5BIn_Article_Promo_Box%5D-%5BNews_Promo_In_Article%5D-%5BNews_Promo_In_Article_BBCGeneric%5D-%5BPS_PROGRAMMES~N~~laptopfatigue_bbscotland_0110_news%5D`
+
 ` Flatmate from SpareRoom `
+remove ` - Andertons Music Co. `
+` - Unix & Linux Stack Exchange `
+
+`dev/vcs/git/git-submodules.md` -> `[git-submodules](/dev/vcs/git/git-submodules.md)`
+
 
 ```
 Example (https://example.com&gs_lcp=Cgdnd3Mtd2l6EAEYATIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yCAgAEAcQChAeMgUIABCABDIICAAQBxAFEB4yCAgAEAcQBRAeMggIABAHEAUQHjoKCCMQsAIQsAMQJzoHCAAQsAMQDToLCAAQsAMQCBANEB5KBAhBGAFKBAhGGABQ2wRYgwlgwCpoAnAAeAGAAY4DiAHuBpIBBzAuMi4xLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz)
 ```
+
+Great Suspender:
+```
+BBC iPlayer - Horizon - 2022: How to Sleep Well with Michael Mosley (chrome-extension://jaekigmcljkkalnicnjoafgfjoefkpeg/suspended.html#ttl=BBC%20iPlayer%20-%20Horizon%20-%202022%3A%20How%20to%20Sleep%20Well%20with%20Michael%20Mosley&pos=0&uri=https://www.bbc.co.uk/iplayer/episode/m0015y9l/horizon-2022-how-to-sleep-well-with-michael-mosley#xtor=CS8-1000-%5BPromo_Box%5D-%5BNews_Promo%5D-%5BNews_Promo%5D-%5BPS_IPLAYER~N~m0015y9l~P_HorizonSleepMichaelMosley%5D)
+```
+
+
+```
+HICSS v7.08 Database Schema (RBCH).pdf (file:///home/kvogel/projects/general/work/uhs/files/hicss/HICSS%20v7.08%20Database%20Schema%20(RBCH).pdf)
+```
+
+```
+Ruby, Age 30, London - North (https://uk.match.com/d/profile-display/638512513?ibl=816235573&mtag=30102_Profil&co=4001120&session_origin=4001120)
+```
+
+```
+    hangover lasting several days - Google Search (https://www.google.com/search?q=hangover+lasting+several+days&oq=hangover+lasting+several+days&aqs=chrome..69i57.6218j0j1&sourceid=chrome&ie=UTF-8)
+```
+
+(18) The Future Sound of London - Essential Mix BBC radio one [1994-05-14] - YouTube (https://www.youtube.com/watch?v=_8SBdkru4IY&t=1s)
+(18) The Future Sound of London - Essential Mix [1993-12-04] BBC RADIO 1FM LONDON - YouTube (https://www.youtube.com/watch?v=arZbwFNRVnc&t=239s)
+(18) The Chemical Brothers - Essential Mix [2019-04-13] bbc radio 1 - YouTube (https://www.youtube.com/watch?v=NMJ8qk63VhU)
+
+(99+) Sarah (Brightwell) Stacey | LinkedIn (https://www.linkedin.com/in/sarah-stacey-8958a3b1/)
+
+/home/kvogel/projects/general/dev/apps/chrome/extensions/tampermonkey/tampermonkey.md
+
+get rid of funny characters, e.g.: ‎
+
+No longer gets rid of `^Window`? linkify doesn't remove `Window` on Windows/WSL if file has `CRLF` line endings
+
+Window (crashed Sun Apr 17 2022)
+
+amazon.co.uk:
+ref=asc_df_1785042181/?tag=googshopuk-21&linkCode=df0&hvadid=375464596693&hvpos=&hvnetw=g&hvrand=16303934276501546995&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1006976&hvtargid=pla-785929647500&psc=1&th=1&psc=1&tag=&ref=&adgrpid=79766931554&hvpone=&hvptwo=&hvadid=375464596693&hvpos=&hvnetw=g&hvrand=16303934276501546995&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1006976&hvtargid=pla-785929647500
+
+The Passport Office is lazy, entitled and broken (https://www.telegraph.co.uk/news/2022/04/28/passport-office-lazy-entitled-broken/?WT.mc_id=e_DM2508&WT.tsrc=email&etype=Edi_FPM_New&utmsource=email&utm_medium=Edi_FPM_New20220428&utm_campaign=DM2508)
+
+(99+) Nova Futur Ltd: Overview | LinkedIn (https://www.linkedin.com/company/nova-futur-ltd/)
+
+WHY BITCOIN’S NEXT MOVE COULD SHOCK MILLIONS (https://subscribe1.southbankresearch.com/X981Y4DH?bsft_aaid=06515e46-7465-42f8-a61e-e11c68ce95fb&bsft_eid=95f973a6-a25a-00ee-deda-97d2a5e67fb2&utm_campaign=exi-200422-endo-uki-hl&utm_source=blueshift&utm_medium=email&utm_content=exi-200422-endo-uki-hl-no&bsft_clkid=ddf7e0b8-94c6-40c6-9942-700c277945fd&bsft_uid=c2eaaeb7-3f22-4ab7-b090-3272b9133b2b&bsft_mid=64294ae0-0531-4807-871a-ae064cf7acdc&bsft_txnid=d537a3e2-5831-4880-941e-3648f8d1f716&bsft_utid=c2eaaeb7-3f22-4ab7-b090-3272b9133b2b-MW_EXI&bsft_mime_type=html&bsft_ek=2022-04-20T19%3a02%3a25Z&bsft_lx=4&bsft_tv=4)
+
+Extinction Rebellion is wrong – capitalism is not to blame for climate change (https://www.telegraph.co.uk/business/2022/04/18/extinction-rebellion-wrong-capitalism-not-blame-climate-change/?WT.mc_id=e_DM2073&WT.tsrc=email&etype=Edi_FAM_New_EM_PM&utmsource=email&utm_medium=Edi_FAM_New_EM_PM20220418&utm_campaign=DM2073)
+
+Had enough of the finance gerontocracy? PayPal billionaire Peter Thiel has, again. | Fortune and Freedom (https://fortuneandfreedom.com/topic/paypal-billionaire-peter-thiel/?bsft_aaid=b80f057b-39db-472e-a08e-240b3587adc9&bsft_eid=7640fbad-9ffc-cd0d-f3c8-d4345ad2e26d&utm_campaign=faf-220422-incl-lnq-uki&utm_source=blueshift&utm_medium=email&utm_content=faf-220422-incl-lnq-uki&bsft_clkid=f48aa8fc-a6e5-477f-97bf-e480d10aef86&bsft_uid=c2eaaeb7-3f22-4ab7-b090-3272b9133b2b&bsft_mid=fe901597-a462-4e4e-9600-0356989f6a8b&bsft_utid=c2eaaeb7-3f22-4ab7-b090-3272b9133b2b-SB_FAF&bsft_mime_type=html&bsft_ek=2022-04-22T10%3A05%3A21Z&bsft_lx=3&bsft_tv=3)
+
+HICSS v7.08 Database Schema (RBCH).pdf (file:///home/kvogel/projects/general/work/uhs/files/hicss/HICSS%20v7.08%20Database%20Schema%20(RBCH).pdf)
+
+Extinction Rebellion is wrong – capitalism is not to blame for climate change (https://www.telegraph.co.uk/business/2022/04/18/extinction-rebellion-wrong-capitalism-not-blame-climate-change/?WT.mc_id=e_DM2073&WT.tsrc=email&etype=Edi_FAM_New_EM_PM&utmsource=email&utm_medium=Edi_FAM_New_EM_PM20220418&utm_campaign=DM2073)
 
 tableau bi - Google Search (https://www.google.com/search?rlz=1C1CHBF_enGB813GB813&sxsrf=ALeKk00cubmt-_Yx6qc5tCzzscuQIiCpAw%3A1615891586184&ei=goxQYMzhCriZ1fAPl9imqAg&q=tableau+bi&oq=Tableau+b&gs_lcp=Cgdnd3Mtd2l6EAEYAjIFCAAQkQIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgAEEcQsAM6DAgAELEDEEMQRhD5AToECAAQQzoKCAAQsQMQgwEQQzoFCAAQsQM6CAgAELEDEIMBUNTFtylYv8e3KWCQ3rcpaAFwAngAgAGjAYgBxwOSAQMwLjOYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=gws-wiz)
 
@@ -182,6 +237,8 @@ remove space before `(http`
 if it has `https://www.google.com/search?`:
   remove everything until `oq=` (or `q=`?)
   keep until `&`, remove the rest
+
+strip non-essential query string params from Google search e.g. `utm_*`
 
 
 wtf? `#q=~(infinite~true~filters~(postType~(~'page~'post~'aa_book~'aa_event_session~'aa_experience_report~'aa_glossary~'aa_research_paper~'aa_video)~tags~(~'mob*20programming))~searchTerm~'~sort~false~sortDirection~'asc~page~1)`
