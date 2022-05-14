@@ -25,3 +25,9 @@ export function activate(context: vscode.ExtensionContext) {
 export function ping() {
   return "pong";
 }
+
+export function showNotif(msg: string) {
+	vscode.window.showInformationMessage(msg);
+	return true;
+}
+

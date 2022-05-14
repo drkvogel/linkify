@@ -17,4 +17,8 @@ suite('Extension Test Suite', () => {
     assert.strictEqual('pong', extn.ping())
   });
 
+	test('Notification test', () => {
+		assert.strictEqual(extn.showNotif("Linkified!"), true)
+	})
+
 });
