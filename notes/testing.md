@@ -9,12 +9,24 @@ Create a editor, paste some text, select, and run extn either with defined short
 
 ### Automated Testing
 
+#### Run tests from CLI
+
+In the root folder of the repo, e.g. `kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify`, run: `npm run test`
+
+#### Run tests in VS Code
+
+* Open the Run/Debug tab in VS Code (`ctrl+shift+d`)
+* Choose and run the “Extension Tests” launch configuration
+
+This will open an instance of VS Code with your extension installed and then run any test suite.
+
+
 [Testing your VS Code extensions | VS Code Rocks ](https://vscode.rocks/testing/)
 >This will run mocha on all files in the src/test folder that match `*.test.ts`. This will also work for any folder nested in the test folder. This is useful so if you want to have separate folders for different types of tests or different subsystems, they can be separated, and it will still work fine.
 
 >open the Debug tab in VS Code and choose the “Extension Tests” launch configuration. This will open an instance of VS Code with your extension installed and then run any test suite.
 
-[testing vscode extensions with mocha](https://www.google.com/search?q=testing+vscode+extensions+with+mocha&oq=testing+vscode+extensions+with+mocha&aqs=chrome..69i57.6978j0j7&sourceid=chrome&ie=UTF-8)
+[testing vscode extensions with mocha](https://www.google.com/search?q=testing+vscode+extensions+with+mocha)
 [Testing Extensions | Visual Studio Code Extension API ](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
 >Visual Studio Code supports running and debugging tests for your extension. These tests will run inside a *special instance of VS Code* named the *Extension Development Host*, and have full access to the VS Code API. We refer to these tests as integration tests, because they go beyond unit tests that can run without a VS Code instance.
 
@@ -376,3 +388,82 @@ Exit code:   0
 Done
 ```
 
+```
+2022-08-08 13:08:53 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
+❯ npm run test
+
+> linkify@0.1.3 pretest
+> npm run compile
+> linkify@0.1.3 compile
+> tsc -p ./
+> linkify@0.1.3 test
+> node ./out/test/runTest.js
+
+Downloading VS Code 1.70.0 from https://update.code.visualstudio.com/1.70.0/linux-x64/stable
+Downloading VS Code [=============================-] 99%Downloaded VS Code 1.70.0 into /home/kvogel/projects/general/projects/repos/linkify/.vscode-test/vscode-linux-x64-1.70.0
+Downloading VS Code [==============================] 100%[main 2022-08-08T12:12:06.248Z] update#ctor - updates are disabled by the environment
+[57817:0808/131206.301665:ERROR:sandbox_linux.cc(377)] InitializeSandbox() called with multiple threads in process gpu-process.
+[main 2022-08-08T12:12:08.478Z] Starting extension host with pid 58235 (fork() took 6 ms).
+Loading development extension at /home/kvogel/projects/general/projects/repos/linkify
+
+  Extension Test Suite
+    ✔ Example test
+    ✔ Ping test
+    ✔ Notification test
+  3 passing (90ms)
+[main 2022-08-08T12:12:10.235Z] Waiting for extension host with pid 58235 to exit.
+[main 2022-08-08T12:12:10.251Z] Extension host with pid 58235 exited with code: 0, signal: null.
+Exit code:   0
+Done
+```
+
+
+```
+2022-08-08 13:20:17 kvogel@kvogel-surface-ubuntu:~/projects/general/projects/repos/linkify ±(master) ✗
+❯ npm install
+up to date, audited 206 packages in 958ms
+
+1 critical severity vulnerability
+To address all issues, run: npm audit fix
+Run `npm audit` for details.
+
+❯ npm audit fix
+changed 1 package, and audited 206 packages in 914ms
+found 0 vulnerabilities
+```
+
+
+### Error on running Extension Test configuration from VS Code Run/Debug tab?
+
+```
+Error: Cannot find module 'vscode/lib/testrunner'
+Require stack:
+- /home/kvogel/projects/general/projects/repos/linkify/src/test/index.js
+- /snap/code/103/usr/share/code/resources/app/out/vs/loader.js
+- /snap/code/103/usr/share/code/resources/app/out/bootstrap-amd.js
+- /snap/code/103/usr/share/code/resources/app/out/bootstrap-fork.js
+	at Function._resolveFilename (/home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/loader.js:987:15)
+	at /home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/loader.js:832:27
+	at Function.<anonymous> (/home/kvogel/projects/general/projects/repos/linkify/lib/electron/js2c/asar_bundle.js:5:13343)
+	at Function.<anonymous> (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:14538)
+	at Function.<anonymous> (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:62507)
+	at Function._load (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:61875)
+	at Module.require (/home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/loader.js:1059:19)
+	at require (/home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/helpers.js:102:18)
+	at Object.<anonymous> (/home/kvogel/projects/general/projects/repos/linkify/src/test/index.js:13:20)
+	at Module._compile (/home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/loader.js:1163:14)
+	at Object..js (/home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/loader.js:1216:10)
+	at Module.load (/home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/loader.js:1035:32)
+	at /home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/loader.js:876:12
+	at Function.<anonymous> (/home/kvogel/projects/general/projects/repos/linkify/lib/electron/js2c/asar_bundle.js:5:13343)
+	at Function.<anonymous> (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:14538)
+	at Function.<anonymous> (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:62507)
+	at Function._load (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:61875)
+	at Module.require (/home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/loader.js:1059:19)
+	at require (/home/kvogel/projects/general/projects/repos/linkify/lib/internal/modules/cjs/helpers.js:102:18)
+	at Function.r [as __$__nodeRequire] (/snap/code/103/usr/share/code/resources/app/out/vs/loader.js:5:101)
+	at w._loadCommonJSModule (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:63965)
+	at w._doHandleExtensionTests (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:97:19792)
+	at w.$extensionTestsExecute (/snap/code/103/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:97:19535) {code: 'MODULE_NOT_FOUND', requireStack: Array(4), stack: 'Error: Cannot find module 'vscode/lib/testrun…ch/api/node/extensionHostProcess.js:97:19535)', message: 'Cannot find module 'vscode/lib/testrunner'
+R…are/code/resources/app/out/bootstrap-fork.js'}
+```

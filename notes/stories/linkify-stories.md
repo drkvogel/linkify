@@ -1,5 +1,8 @@
 
+
 n.b. when pasting candidates here, paste whole url including `https://`, so can copy paste this into test area and run prog on them - won't work without whole url!
+
+linkify: `?utm_source=tldrnewsletter`, in fact `utm_source=<anything>`
 
 `Window (crashed Mon Mar 21 2022)`
 
@@ -11,6 +14,7 @@ remove ` - Andertons Music Co. `
 
 `dev/vcs/git/git-submodules.md` -> `[git-submodules](/dev/vcs/git/git-submodules.md)`
 
+How far-Right are you? - UnHerdv(https://unherd.com/2022/09/how-far-right-are-you/?tl_inbound=1&tl_groups0=18743&tl_period_type=3&mc_cid=ac8d71269c&mc_eid=5169b0bb45)
 
 ```
 Example (https://example.com&gs_lcp=Cgdnd3Mtd2l6EAEYATIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yCAgAEAcQChAeMgUIABCABDIICAAQBxAFEB4yCAgAEAcQBRAeMggIABAHEAUQHjoKCCMQsAIQsAMQJzoHCAAQsAMQDToLCAAQsAMQCBANEB5KBAhBGAFKBAhGGABQ2wRYgwlgwCpoAnAAeAGAAY4DiAHuBpIBBzAuMi4xLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz)
@@ -43,6 +47,11 @@ Ruby, Age 30, London - North (https://uk.match.com/d/profile-display/638512513?i
 /home/kvogel/projects/general/dev/apps/chrome/extensions/tampermonkey/tampermonkey.md
 
 get rid of funny characters, e.g.: ‎
+
+get rid of stuff (highlighted text?) after `#`:
+```
+  Olga Koch: OK Computer - Episode 1 - BBC Sounds (https://www.bbc.co.uk/sounds/play/m000xmls#xtor=CS8-1000-%5BPromo_Box%5D-%5BSport_Promo%5D-%5BSport_Promo%5D-%5BPS_SOUNDS~N~m000xmls~P_OlgaKochOKComputerEp1%5D)
+```
 
 No longer gets rid of `^Window`? linkify doesn't remove `Window` on Windows/WSL if file has `CRLF` line endings
 
@@ -81,9 +90,27 @@ linkify: `?WT.mc_id=e_DM1539732&WT.tsrc=email&etype=Edi_FAM_New_ES_Sat&utmsource
 
 linkify: this went wrong: `Python developer - contract - 6 months - Outside ir35 - remote- £450 - chrisjbird@gmail.com - Gmail (https://mail.google.com/mail/u/0/#inbox/FMfcgzGmtXGvSsGprFtTzHwDthXQkFdK)`
 
+```
+The 4 rules of techno minimalism(https://www.youtube.com/watch?v=mh8jV6IGI84&t=8s
+```
+goes to:
+```
+[The 4 rules of techno minimalism](https://www.youtube.com/watch?vt=8s
+```
+wrong!
+
+[Listen to CJ Bolland & Trevor Rockliffe - Sutra (Bristol) 1994 by Jack010 from Rotterdam in old-school Rotterdam Parkzicht playlist online for free on SoundCloud ](https://soundcloud.com/magpie303/cj-bolland-trevor-rockliffe-sutra-bristol-1994?in=jack-heiden/sets/old-school-rotterdam-parkzicht)
+get rid of `Listen to ` and ` online for free on SoundCloud`
+
+[Philip Larkin was a filthy genius - UnHerd](https://unherd.com/2022/08/philip-larkin-was-a-filthy-genius/?tl_inbound=1&tl_groups[0]=18743&tl_period_type=3&mc_cid=c209249dce&mc_eid=5169b0bb45)
+
 
 linkify: `  DJ sets & tracklists on MixesDB `
+` | DJ sets & tracklists on MixesDB `
 
+`The ‘healthy’ habits that are actually harming your gut (https://www.telegraph.co.uk/health-fitness/body/healthy-habits-actually-harming-gut/?WT.mc_id=e_DM1562954&WT.tsrc=email&etype=Edi_Edi_New_Reg&utmsource=email&utm_medium=Edi_Edi_New_Reg20220516&utm_campaign=DM1562954)`
+
+`Making friends in later life is almost as bad as dating (https://www.telegraph.co.uk/women/life/making-friends-later-life-almost-bad-dating/?li_source=LI&li_medium=liftigniter-rhr)`
 
 okc: `?cf=quickmatch`
 

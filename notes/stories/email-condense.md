@@ -23,32 +23,64 @@ to me
 
 Hi Chris,
 
- 
+
 
 Just checking in to see if this role would be of interest?
 
- 
+
 
 Regards,
 
- 
+
 
 Rich
 
- 
+
 
 Rich Crowcombe
 Managing Consultant - IT
- 
-Mobile: 07979 154556  |  Bristol Tel: 0117 456 3370  |  London Tel: 0207 118 8898  
+
+Mobile: 07979 154556  |  Bristol Tel: 0117 456 3370  |  London Tel: 0207 118 8898
 http://uk.linkedin.com/in/richcrowcombe
 ```
 into these:
 ```
 RE: Front-End Developer - Remote based - £55-65k
-Rich Crowcombe <rich.crowcombe@artisrecruitment.co.uk> 16:13 (1 hour ago) to me
+Rich Crowcombe <rich.crowcombe@artisrecruitment.co.uk>
 >Hi Chris, Just checking in to see if this role would be of interest? Regards, Rich Rich Crowcombe Managing Consultant - IT Mobile: 07979 154556  |  Bristol Tel: 0117 456 3370  |  London Tel: 0207 118 8898 http://uk.linkedin.com/in/richcrowcombe
 ```
+
+```
+Outside IR35 software developer contract
+Inbox
+
+Ash.Fellows@opusrs.com
+Tue, 31 May, 17:42 (2 days ago)
+to me
+
+Hi Chris
+
+
+
+My client, an exciting design consultancy are looking for a talented software developer with experience across a broad range of technologies for a 3 month, fully remote contract paying up-to £425pd Outside IR35.
+
+
+
+What you will need
+
+
+
+As a Python Developer you will be using these technologies
+
+
+
+•Python
+
+•C++
+
+•React Native (Small amount for prototyping)
+```
+
 
 ### Yahoo Mail
 
@@ -108,7 +140,7 @@ Hi Chris Are you looking forward to the weekend? Thought I would email you in re
 Senior Python Developer - Trading firm - circa £90k
 Inbox
 
-Waqar Ali waqar.ali@cititec.com via bullhornmail.com 
+Waqar Ali waqar.ali@cititec.com via bullhornmail.com
 Tue, 16 Feb, 17:40 (3 days ago)
 to me
 
@@ -122,12 +154,12 @@ If this is something you would be interested in please send me your updated CV a
 
 Many thanks,
 Waq
- 
+
 Waqar Ali
 Recruitment Consultant
 
 
-50 Featherstone Street 
+50 Featherstone Street
 London EC1Y 8RT
 +44 (0) 20 7608 5850
 ```
