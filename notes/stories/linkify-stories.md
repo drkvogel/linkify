@@ -4,6 +4,17 @@ n.b. when pasting candidates here, paste whole url including `https://`, so can 
 
 linkify: `?utm_source=tldrnewsletter`, in fact `utm_source=<anything>`
 
+linkify
+`?utm_source=NSNEW&utm_campaign=677ee8169d-nsnew_070520&utm_medium=email&utm_term=0_e65fab71ff-677ee8169d-378903259`
+
+```
+Free Masterclass: Building A High Flow Strategy To Dominate 2023 (https://www.flowresearchcollective.com/high-flow-strategy?utm_source=active-campaign&utm_medium=newsletter&utm_campaign=hfs-invite-6&vgo_ee=Nj1w57h78K0hTzCVRbRWy3wFoqDlMHNmyq65fGLdufk%3D)
+```
+
+```
+Jordan Peterson’s Politics Make Life Harder for Young Men (chrome-extension://jaekigmcljkkalnicnjoafgfjoefkpeg/suspended.html#ttl=Jordan%20Peterson%E2%80%99s%20Politics%20Make%20Life%20Harder%20for%20Young%20Men&pos=0&uri=https://www.thedailybeast.com/jordan-petersons-politics-make-life-harder-for-young-men?via=twitter_page)
+```
+
 `Window (crashed Mon Mar 21 2022)`
 
 `?xtor=CS8-1000-%5BIn_Article_Promo_Box%5D-%5BNews_Promo_In_Article%5D-%5BNews_Promo_In_Article_BBCGeneric%5D-%5BPS_PROGRAMMES~N~~laptopfatigue_bbscotland_0110_news%5D`
