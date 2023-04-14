@@ -1,11 +1,26 @@
 
-
 n.b. when pasting candidates here, paste whole url including `https://`, so can copy paste this into test area and run prog on them - won't work without whole url!
 
-linkify: `?utm_source=tldrnewsletter`, in fact `utm_source=<anything>`
+---
+`?utm_source=tldrnewsletter`, in fact `utm_source=<anything>`
 
-linkify
+---
 `?utm_source=NSNEW&utm_campaign=677ee8169d-nsnew_070520&utm_medium=email&utm_term=0_e65fab71ff-677ee8169d-378903259`
+
+---
+this is wrong:
+
+Django Engineer - Contract - Outiside IR35 + Fully Remote - chrisjbird@gmail.com - Gmail (https://mail.google.com/mail/u/0/popout?ver=16k8g23zpfr81&search=inbox&th=%23thread-f%3A1759712595636267948&cvid=3)
+
+-> [Django Engineer](https://mail.google.com/mail/u/0/popout?ver=16k8g23zpfr81&search=inbox&th=%23thread-f%3A1759712595636267948&cvid=3)
+
+---
+
+medium etc:
+[Turn Your Best Developers Into Managers  by Mohamed Aboelez  Mar, 2023  Level Up Coding ](https://levelup.gitconnected.com/turn-your-best-developers-into-managers-841be5d6a789?source=email-acb34ccb1bc0-1680422348890-digest.reader-5517fd7b58a6-841be5d6a789----1-102------------------334ed41a_c7ac_4977_a3ba_c3331422669e-1)
+
+
+More or Less - Does toilet paper cause 15% of global deforestation? - BBC Sounds (https://www.bbc.co.uk/sounds/play/w3ct3k5w?at_mid=Lz1P03ecBg&at_medium=owned_display&at_campaign=MoreorLessToiletPaper_NewsPromo_PNC&at_ptr_name=bbc&at_campaign_type=owned&at_objective=consumption&at_ptr_type=media&at_format=image&at_bbc_team=BBC)
 
 ```
 Free Masterclass: Building A High Flow Strategy To Dominate 2023 (https://www.flowresearchcollective.com/high-flow-strategy?utm_source=active-campaign&utm_medium=newsletter&utm_campaign=hfs-invite-6&vgo_ee=Nj1w57h78K0hTzCVRbRWy3wFoqDlMHNmyq65fGLdufk%3D)

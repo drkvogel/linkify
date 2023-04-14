@@ -1,6 +1,8 @@
 
 ## defer
 
+[Chrome TextFragment / Highlight](file:///Users/kvogel/projects/general/dev/apps/chrome/chrome-google-text-fragment-highlight.md)
+
 [Publishing Extension  Visual Studio Code Extension API ](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions)
 https://code.visualstudio.com/api/references/vscode-api#SelectionRange
 2019-10-11 19:28:18
